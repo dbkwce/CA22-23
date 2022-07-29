@@ -1,0 +1,20 @@
+         10061 function calls (8705 primitive calls) in 2.720 seconds
+
+   Ordered by: internal time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    2.685    2.685    2.685    2.685 {built-in method builtins.input}
+     1000    0.008    0.000    0.020    0.000 /usr/lib/python3.10/random.py:292(randrange)
+   1357/1    0.006    0.000    0.009    0.009 /home/rao/Desktop/CA/quickSort.py:42(quickSort)
+     1000    0.005    0.000    0.008    0.000 /usr/lib/python3.10/random.py:239(_randbelow_with_getrandbits)
+     3000    0.004    0.000    0.004    0.000 {built-in method _operator.index}
+      678    0.003    0.000    0.003    0.000 /home/rao/Desktop/CA/quickSort.py:29(partition)
+     1000    0.003    0.000    0.023    0.000 /usr/lib/python3.10/random.py:366(randint)
+        1    0.002    0.002    0.025    0.025 /home/rao/Desktop/CA/quickSort.py:54(<listcomp>)
+     1020    0.002    0.000    0.002    0.000 {method 'getrandbits' of '_random.Random' objects}
+     1000    0.001    0.000    0.001    0.000 {method 'bit_length' of 'int' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.print}
+        1    0.000    0.000    2.720    2.720 /home/rao/Desktop/CA/quickSort.py:51(main)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+
