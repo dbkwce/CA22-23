@@ -1,0 +1,12 @@
+Assignment 1: Quick Sort Analysis using a Profiler.
+Student Name: Daulatrao Patil
+PRN         : 2020BTEIT00034
+
+Obeservation:
+
+    After running the program for different types of input, whether it be the size of array or elements inside it. Here are the obeservations:
+        1. Quick Sort is an divide and conquer algorithm.
+        2. Worst case occurs when all the elements inside the array are sorted and time complexity is O(n^2)
+        3. The time complexity is directly related to size of the array.
+        4. In the output file (attached along with these) I've choosen the array size as 1000 and the number of function calls are 10061, while 8705 primitive calls.
+        5. The code got executed in less than 3 seconds, but if we increase the value of n(size of the array) then the execution time will increase, and vice versa. 
