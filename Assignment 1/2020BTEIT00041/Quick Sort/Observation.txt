@@ -1,0 +1,28 @@
+Computer Algorithm 
+
+Assignment: 1
+
+Name : Om Vivek Gharge
+PRN : 2020BTEIT00041
+
+Observation:
+
+1. Time required to sort the array is directly
+    proportional to the size of array.
+2. In the example,
+    when size of array is 10: 
+        number of swapping = 18
+        number of times partition is called = 6
+
+    when size of array is 100: 
+        number of swapping = 452
+        number of times partition is called = 65
+
+    when size of array is 1000: 
+        number of swapping = 6115
+        number of times partition is called = 661
+
+3. Time complexity of QuickSort:
+    Worst Case Time complexity, if the given array is already sorted in increasing or decreasing order
+    i.e. O(n^2)
+    Best and Average Case Time complexity : O(nlog(n))

@@ -1,0 +1,50 @@
+Computer Algorithm 
+
+Assignment: 1
+
+Name : Om Vivek Gharge
+PRN : 2020BTEIT00041
+
+Algorithm:
+
+QuickSort is a type of Divide and Conquer Algorithm.
+It is based on dividing the array around a pivot element.
+
+1. Select an element of array as a pivot element.
+2. Iterate through the array using two pointers and swap them if
+    element pointed by starting pointer is greater than pivot
+    element pointed by end pointer is smaller than pivot.
+    To make smaller elements one side and larger elements one side.
+3. Stop the iteration when starting pointer exceeds end pointer.
+4. Swap the pivot and end pointer value.
+5. Repeat the above steps by dividing the array into two parts.
+6. Select the pivot in each of those halves
+7. Repeat the steps using recursion.
+
+void QuickSort(array[],low,high)
+{
+    if(low<high)
+    {
+        pivot = partition(array,low,high);
+        QuickSort(array,low,pivot-1);
+        QuickSort(array,pivot+1,high);
+    }
+}
+
+int partition(array[],low,high){
+    pivot = array[high];
+    indx = low -1;
+
+    for(i = low ;i<=high -1 ;j++)
+    {
+        if(array[i]<pivot){
+            indx++;
+            swap array[indx] and array[i]
+        }
+    }
+
+    swap array[indx+1] and array[high]
+
+    return (indx+1)
+}
+
