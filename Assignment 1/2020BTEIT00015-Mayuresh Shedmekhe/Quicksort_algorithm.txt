@@ -1,0 +1,102 @@
+Name:Mayuresh Shedmekhe
+PRN: 2020BTEIT00015
+
+Quicksort Algorithm:
+
+Step 1:   Start.
+Step 2:   Goto getInput function.
+Step 3:   Read the size of an array.
+Step 3.1: Initialise an array of input size.
+Step 3.2: Initialise variables low,high.
+Step 4:   Goto getSorted function.
+Step 5:   If (low<high)
+Step 5.1: Goto getPartition function.
+Step 5.2: Initialise variables pivot,i,j.
+Step 5.3: If pivot is equal to or smaller than element in array.Increment i by 1;
+Step 5.4: Else decrement j by 1;
+Step 6:   Goto doSwap function.
+Step 7:   Repeat the steps 5 and 6 until (low<high).
+Step 8:   Goto getPrinted function.
+Step 9:   Stop.    
+
+
+Code:
+#include <iostream>
+using namespace std;
+
+void getPrinted(int arr[],int low,int high)
+{
+    int n=low+high;
+    for(int i=0;i<n;i++)
+    {
+        cout<<arr[i]<<" ";
+    }
+    cout<<endl;
+    return;
+}
+
+void doSwap(int arr[],int i,int j)
+{
+    int temp=arr[i];
+    arr[i]=arr[j];
+    arr[j]=temp;
+
+    return;
+}
+
+int getPartition(int arr[],int low,int high)
+{
+    int pivot=arr[low];
+    int i=low,j=high;
+    while(i<j)
+    {
+        do{
+            i++;
+        }while(arr[i]<=pivot);
+        do{
+            j--;
+        }while(arr[j]>pivot);
+
+        if(i<j)
+        doSwap(arr,i,j);
+    }
+    doSwap(arr,low,j);
+    return j;
+}
+
+void getSorted(int arr[],int low,int high)
+{
+    if(low<high)
+    {
+        int j=getPartition(arr,low,high);
+        getSorted(arr,low,j);
+        getSorted(arr,j+1,high);
+    }
+    return;
+}
+
+void getInput()
+{
+    int n=0;
+    cout<<"Enter the size of an array to be sorted\n";
+    cin>>n;
+    int *input=new int[n];
+    
+    for(int i=0;i<n;i++)
+    {
+        input[i] = n-i;
+    }
+    
+    int low=0,high=n;
+    getSorted(input,low,high);
+    getPrinted(input,low,high);
+
+    return;
+
+}
+
+int main() {
+    getInput();
+    return 0;
+}
+
