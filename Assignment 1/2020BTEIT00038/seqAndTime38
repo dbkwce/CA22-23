@@ -1,0 +1,26 @@
+Name: Mohit Prakash Khairnar
+PRN NO: 2020BTEIT00038
+
+
+(2) Can we decide the sequence of functions executed from 'gprof' ?
+
+    No, we can't decide the sequnence of functions executed from gprof because all the function entries those are there on gprof are not in sequence as they called.
+    They are arrange according to the time taken by them in sorted order.
+    
+(3) Time complexity analysis of the quick sort.
+
+    Time complexity of entire recursion tree = Number of levels*Time taken for one level
+    => n/2^k = 1
+    => n = 2^k
+    => log n = k log 2
+    => k = log
+    => log n*n
+    Best Case: O(n*logn)
+    
+    Worst Case: 2 + 3 + 4 + 5 + .....n
+    => n(n+1)/2 -1
+    => n^2 + n
+    => O(n^2)
+    
+    Average Case: O(logn)
+    
