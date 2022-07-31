@@ -1,0 +1,120 @@
+﻿PRN: 2020BTEIT00006
+
+
+Observation of Quicksort Algorithm 
+
+
+
+
+
+
+
+
+No. of function calls associated with each value of n
+
+
+
+
+* n = 10000
+                        
+                swap() = 70916
+                partition() = 9002
+                quickSort() = 1
+                pritingArray() = 1
+
+
+
+
+
+
+* n = 1000 
+                        
+                swap() = 5916
+                partition() = 672
+                quickSort() = 1
+                pritingArray() = 1
+
+
+
+
+
+
+* n = 100
+                        
+                swap() = 338
+                partition() = 68
+                quickSort() = 1
+                pritingArray() = 1
+
+
+
+
+* n = 10 
+                        
+                swap() = 21
+                partition() = 7
+                quickSort() = 1
+                pritingArray() = 1
+
+
+           
+
+
+From above it is clearly visible that the swap() is the most called function, and its complexity is O(1).
+
+
+partition() is the second most called function and it contributes to the time complexity of the algorithm the most, time complexity depends on the size of the array and choosing the pivot. 
+
+
+By observing the partition() and quickSort() we can have the following relation.
+
+
+T(N) = T(J) + T(N-J) + M(N)
+
+
+T(N) = Time Complexity of Quick Sort for the input of size N.
+
+
+* T(J) = Time Complexity of Quick Sort for the input of size N.
+
+
+* T(N-J) = Time Complexity of Quick Sort for the input of size J.
+
+
+* M(N) = Time Complexity of finding the pivot element for N elements.
+
+
+  
+
+
+
+
+
+
+ Time Complexities 
+
+
+        Here N is the size of the array.
+
+
+* Best Case Time Complexity: O(N log N) 
+
+
+        It is possible when all the elements are unsorted and the pivot is chosen from the mean element.
+
+
+
+
+* Worst Case Time Complexity: O(N^2) 
+
+
+                It is possible when all the elements are sorted and we choose the
+        pivot from the end.
+
+
+
+
+* Average Case Time Complexity: O(N log N)
+
+
+ the overall average case for the quick sort is this which we will get by taking an average of all complexities.
