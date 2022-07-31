@@ -1,0 +1,28 @@
+Name:Mayuresh Shedmekhe
+PRN: 2020BTEIT00015
+
+
+No, we cannot decide the sequence of functions to be executed from gprof call tree,as it describes table by total amount of time spent in each function.
+
+
+# Complexity of this algorithm:
+ 
+ Quicksort time complexity depends on the location of pivot and partiton of elements in array.
+ 1. In best case:
+ 	The time complexity of quicksort is : O(n*logn).
+ 	The best case time complexity occurs when the there is nearly equal partition in array
+ 	and when the pivot  element is the middle element or near to the middle element.
+ 	
+ 2. In average case:
+	The time complexity of quicksort is :O(n*logn).
+	The average case time complexity occurs when the array elements are in random order.
+		
+ 3. In worst case:
+ 	The time complexity of quicksort is :O(n*n) .
+ 	The worst case occurs when the given array is already sorted
+ 	 
+#Quicksort space complexity:
+
+   Best case: O(logn).
+   Worst case: O(n).         
+ 	          
