@@ -1,0 +1,38 @@
+Computer Algorithm 
+Assignment 1: Assignment on profiling
+
+
+Student Name: Ritesh Ram Wanave
+Branch      : Information Technology
+PRN         : 2020BTEIT00055  (Batch: S4)
+Prof Name   : Dr. D.B.Kulkarni
+
+Algorithm   :
+
+1. Select a pivot element
+2. Put all the smaller elements on the left and greater on the right of pivot element
+3. Comparison of pivot element with element beginning from the first index
+4. If the element is greater than the pivot element, a second pointer is set for that element.
+5. Pivot is compared with other elements.
+6. The process is repeated to set the next greater element as the second pointer.
+7. The process goes on until the second last element is reached.
+8. Finally, the pivot element is swapped with the second pointer.
+9. Select pivot element of in each half and put at correct place using recursion
+
+
+
+quickSort(arr, low, high)
+  if (low < high)
+    pivotIndex <- partition(array,low, high)
+    quickSort(array, low, pivotIndex - 1)
+    quickSort(array, pivotIndex, high)
+
+partition(array, low, high)
+  set high as pivotIndex
+  storeIndex <- low - 1
+  for i <- low + 1 to high
+  if element[i] < pivotElement
+    swap element[i] and element[storeIndex]
+    storeIndex++
+  swap pivotElement and element[storeIndex+1]
+return storeIndex + 1

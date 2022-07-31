@@ -1,0 +1,23 @@
+Computer Algorithm 
+Assignment 1: Assignment on profiling
+
+
+Student Name: Ritesh Ram Wanave
+Branch      : Information Technology
+PRN         : 2020BTEIT00055  (Batch: S4)
+Prof Name   : Dr. D.B.Kulkarni
+
+Observation :
+
+Here as we increase the value of n then the time required to execute the program increases.
+This means 
+n is directly proportional to the time required to execute the program.
+For lower values of n, the time required to execute the program is less(for example if value of n is 10 then the execution time is nearly 0).
+For higher values of n, the time required to execute the program is more.
+Here I have taken value of n as 10000 then the time required to execute the program is in the output.txt file.
+It also shows us about how many times an functon is called and how much time it has been taken to execute the function.
+
+About time and space complexicity
+Here the Best time complexicity of program is O(n*log(n)) and the worst time complexicity of program is O(n^2).
+Also the average time complexicity of program is O(n*log(n)).
+The space complexicity of program is O(n*log(n)).
