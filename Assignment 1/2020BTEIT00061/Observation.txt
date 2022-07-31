@@ -1,0 +1,51 @@
+//2020BTEIT00061  ABHISHEK DEOKAR
+
+sequence of functions executed from 'gprof' :
+	We cannot decide sequence of functions executed from gprof.The call graph shows  for each function, which
+	functions called it and  which other functions it called and how many times it called and it shows 
+	function in sorted manner according to the time of execution.
+
+Observations: 
+
+
+ Number of Comparisons = n-1, where n is the number of array elements to be sorted
+	Explanation = It is  because that every element in the array except the pivot element must be compared to the 
+		      pivot; to check whether it goes to the left side or right side of the pivot and thus the 
+		      partition function performs n comparisons. 
+
+ Complexity of the Algorithm : 
+ 	Time Complexity : 
+		
+			recurrence relation for C(n)
+					C(n) = C(p-1) + n + C(n-p);     
+					
+					where, 
+					
+					C(n) = number of comparisons
+
+					p = position of pivot 
+
+					C(p-1) = Sort left array by recursion
+
+					n = partition
+	
+					C(n-p) = Sort right array by recursion
+
+			Worst Case:
+				partition is unequal , p =1 or p=n
+				Therefore C(n) = n + C(n-1) , as C(0) = 0
+				Upon solving for C(n) = n+ C(n-1)
+						      = n + n-1 + C(n-2)
+						      = n + n-1 + n-2 + .... 2 + C(1)
+						      = n + n-1 + n-2 + .... 2 + 1-1
+						      = n(n+1)/2 -1  ~= n^2/2
+
+			Best Case:
+				partition is almost equal , p = (n+1)/2
+				Thus C(n) = n + 2C((n-1)/2)
+
+				Upon simpliying , C(n) = nlogn ,with logarithmic base =2  
+
+	Space Complexity : 
+			Best Case  = O(logn)
+			Worst Case  = O(n)
