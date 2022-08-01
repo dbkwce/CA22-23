@@ -1,0 +1,35 @@
+My Input 
+
+
+* I tested this program on different input range ranging from 10 , 100 and 1000.
+* Following is the observation regarding number of function calls.
+
+n=10 , Ans = 30 to 40
+n=100, Ans = 500 to 700
+n=1000, Ans = 7500 to 8500
+n=100000, Ans = 90000 to 110000
+n=1000000, Ans = 1280000 to 1400000
+
+* From above observation for every value of n , number of comparison are in the range of n*lon(n) 
+* So Average case time Complexity of this program is n*log(n)
+
+
+
+
+
+Observation : -
+
+
+           ** We can't decide the sequece of function calls made or  executed by gprof but we can decide the number of function calls made by each function
+           ** From output.txt we can observe the total flow of the program.
+           ** For Each Function we get total information regarding the parent function (the function which called that particular function ) and the child functions 
+           
+    
+           ** Time Complexity : 
+           Best Case Complexity - O(n*logn).
+           Average Case Complexity - O(n*logn).
+           Worst Case Complexity - O(n^2)
+
+
+
+

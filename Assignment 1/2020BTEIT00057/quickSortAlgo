@@ -1,0 +1,15 @@
+                    Algoritm(Quick Sort)
+                    
+Step 1:-Read nuber of element user want to enter
+Step 2:-Randomly generated array of user defined size
+Step 3:-Declare variable i and j and set to lower and higher respectively
+Step 4:-set pivot to arr[lower] 
+Step 5:-increment i till arr[i] >pivot and 
+        increment j till arr[j] < pivot
+Step 6:-if(i<j) then swap the value of arr[i] and arr[j]
+         and swap the value of arr[lower] to arr[j] and return j
+Step 7:- Repeat Step 3 to step 7 by seting l to h=j 
+         and from l=j+1 to h till i<j
+Step 8:-print Sorted array
+Step 9:-Stop
+ 

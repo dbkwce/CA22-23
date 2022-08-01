@@ -1,0 +1,7 @@
+Name: Nidhish Chauhan
+PRN No.: 2020BTEIT00069
+Dept.: I.T.
+
+i) We observed that 'gprof' can show us the flow of execution of functons but we cannot decide the sequence of functions execution.
+
+ii) In the given algorithm, the pivot will be left most element of an array or a part of given array. At every level,'n' elements will be compared for log(n) times if pivot is a middle element making Time Complexity O(nlogn) and that is also the best case of this algorithm but if array is already sorted or pivot is taken as a left side or right side element then 'n' elements will be compared for 'n' times making total Time Complexity O(n^2) which is its worst case. To solve the worst case issue either select the middle element as a pivot or a random element as a pivot.
