@@ -1,7 +1,0 @@
-Step 1: Select the Pivot Element
-Step 2: A pointer is fixed at the pivot element. The pivot element is compared with the elements beginning from the first index.
-Step 3: If the element is greater than the pivot element, a second pointer is set for that element.
-Step 4: Now, pivot is compared with other elements. If an element smaller than the pivot element is reached, the smaller element is swapped with the greater element found earlier.
-Step 5: Again, the process is repeated. The process goes on until the second last element is reached.
-Step 6: Finally, the pivot element is swapped with the second pointer.
-Step 7: Pivot elements are again chosen for the left and the right sub-parts separately. And, steps from 2 to 6 are repeated.
