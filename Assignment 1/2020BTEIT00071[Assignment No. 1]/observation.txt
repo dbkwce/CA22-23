@@ -20,11 +20,6 @@ Answer 2]: Comment on the complexity of the algorithm - suppose n is the size of
 
 Observations:
 
-  Function                 No. of calls    
+ 
 
-1] swap()
-2] Partition()
-3]QuickSort()
-4]PrintArray()
-
-From this output, 
+From this output, The following table shows the how many functions are call and how many times, and time for execution the function.
