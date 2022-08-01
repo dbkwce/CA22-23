@@ -1,0 +1,10 @@
+PRN No. : 2020BTEIT00068
+
+(1)If We can decide Sequence of Algorithm:
+ No, we can’t decide the sequence of functions executed in gprof, because gprof shows time required for the execution and no.of times for which function is called and not the sequence of executed functions.	
+
+(2)Time Complexity of Quick Sort Algorithm:
+ For the best case, array would be sorted so there would be no swaps but still there be n*log n comparisons, provided size of input is n.
+ Best Case Time Complexity: O(nlogn)
+ Average Case Time Complexity: O(nlogn)
+ Worst Case Time Complexity: O(n^2)
