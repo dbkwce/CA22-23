@@ -1,0 +1,90 @@
+
+
+Algorithm :
+
+1. Take first element as "pivot"
+2. Take a pointer (the start pointer) at the first element 
+3. Take a pointer (the end pointer) at the last element 
+4. While the value at the start pointer in the array is less than the pivot value increment start pointer. Continue until the value at the start pointer is greater than or equal to the pivot value.
+5. While the value at the end pointer in the array is greater than the pivot value decrement end pointer. Continue until the value at the end pointer is less than or equal to the pivot value.
+6. If the start pointer is less than or equal to the end pointer, then swap the values at these locations in the array
+7. Move the start pointer to the right by one and the end pointer to the left by one.
+8. If the left pointer and right pointer don’t meet, go to step 1.
+9. if they meet terminate and return pivot index
+
+
+
+
+
+
+
+
+Code :
+
+
+
+// Author : Ayush Sudhir Thasale
+// Program : Quick Sort Implementation
+
+// Author : Ayush Sudhir Thasale
+// Program : Quick Sort Implementation
+
+#include <iostream>
+using namespace std;
+
+// A Funnction to swap values
+void swap_values(int &x, int &y)
+{
+	int temp = x;
+	x = y;
+	y = temp;
+}
+
+// A function to return position of pivot element when
+// Inserted at it's Desired position in sorted array
+int partition(int arr[], int start, int end)
+{
+	int pivot = arr[start];
+	int i = start, pivot_pos = end;
+	do
+	{
+		// Checking for the position where a number gets greater than Pivot
+		do
+			i++;
+		while (arr[i] <= pivot);
+		// Checking for the position where a number gets Smaller than Pivot
+		do
+			pivot_pos--;
+		while (arr[pivot_pos] > pivot);
+		// Swapping Smaller elements on left ans Greater Elements on right
+		if (i < pivot_pos)
+			swap_values(arr[i], arr[pivot_pos]);
+	} while (i < pivot_pos);
+	swap_values(arr[start], arr[pivot_pos]);
+	return pivot_pos;
+}
+// Recursive Function to implement Quick Sort
+void quick_sort(int arr[], int start, int end)
+{
+	int pivot_pos;
+	if (start < end)
+	{
+		pivot_pos = partition(arr, start, end);
+		quick_sort(arr, start, pivot_pos);
+		quick_sort(arr, pivot_pos + 1, end);
+	}
+}
+int main()
+{
+	int arr[7], n = 7, i;
+	for (int i = 0; i < n; i++)
+		cin >> arr[i];
+
+	quick_sort(arr, 0, n);
+	for (i = 0; i < n; i++)
+		cout << arr[i] << " ";
+	cout << endl;
+	return 0;
+}
+
+
