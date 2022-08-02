@@ -1,0 +1,27 @@
+PRN No.: 2020BTEIT00023
+Name: Trupti Tanaji Chopadar
+
+Ques 1: If we can decide the sequence of functions executed from 'gprof' ?
+Ans. : No, we can't decide the sequence of functions executed from gprof. Since, gprof shows only the time for execution of functions and number of times functions called in the program.
+
+Ques 2: Comment on the complexity of the algorithm.
+Ans. : Suppose, n is the size of the array.
+
+Time complexity in 
+
+(a)Best Case: The best case time complexity of quick sort is O(nlogn). If the pivot element divides the array into two equal sub-arrays, then this would be the best case. 
+
+(b)Average Case: The average case time complexity of quick sort is O(nlogn). 
+
+(c)Worst Case: The worst case time complexity of quick sort is O(n). It occurs when the pivot element is choosen first or last in the sorted or reverse sorted.
+
+Observation:
+
+    Function       No. of calls
+   
+1. partition()         10
+2. QuickSort()         5
+3. main()              1
+
+
+From the output, it is seen that partition() called 10 times i.e. complexity of O(n), whereas QuickSort() and main() called once.
