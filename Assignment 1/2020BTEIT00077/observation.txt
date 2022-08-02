@@ -1,0 +1,41 @@
+﻿Time complexity explained:
+
+
+
+
+1] In worst case 
+This will happen when we will when our array will be sorted and we select smallest or largest indexed element as pivot 
+
+
+
+
+2]in average case 
+Each partitioning operation takes O(n) operations (one pass on the array). In average, each partitioning divides the array to two parts which sums up to log n operations. In total we have O(n * log n) operations.
+
+
+
+
+3]best case
+It is when middle element is selected as pivot element
+we have selected mean element as pivot then the array will be divided in branches of equal size so that the height of the tree will be minimum.
+
+
+
+
+                                                    2,7,5,1,8
+                                           {2,7} {}      {1,8} {}
+                                       7 {}                 8{}
+
+
+
+
+
+
+
+
+
+
+if we can decide the sequence of functions executed from 'gprof' —--------->
+No, The functions are sorted by decreasing run-time spent in them,  function which take more time to execute is shown first in the table.
+ all the function entries are not in sequence as they called in code itself.
+ so, we can't decide the sequence of functions executed from gprof because
