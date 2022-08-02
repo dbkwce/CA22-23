@@ -1,0 +1,29 @@
+Gprof is basically a profiling program which collects and arranges statistics of the 
+program.
+It looks into each of the functions present in the code and collect the timing 
+information and for how many times that particular function was called.
+    From my observation,I think we can not decide the sequence of functions executed 
+in the program using gprof.
+
+    Complexity of the Quick sort algorithm:-
+
+Basically complexity of quick sort can be divided into two types.
+They are as follows:
+
+A]Time complexity
+    Here time complexity can be again divided into three phases according to the case 
+generated.
+1.Best case:
+    The best case in quick sort algorithm is when pivot element is the middle element 
+or near to the middle element.So time complexity for this case is O(n*log n).
+
+2.Average case:
+    It occurs when the array elements are in jumbled order.The average case time complexity
+of quick sort algorithm is O(n*log n).
+
+3.Worst case:
+    It occurs when pivot is either the smallest or the greatest element from the list.
+Time complexity for worst case is O(n^2).
+
+B]Space complexity:
+    The space complexity of quick sort algorithm is O(n*log n).
