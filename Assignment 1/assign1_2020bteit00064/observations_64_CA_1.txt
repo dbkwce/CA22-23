@@ -1,0 +1,24 @@
+1)No,we can not decide the sequence of functions executed from 'gprof.
+     In each output file entries of each table are sorted by time spent in the function and its subroutines.So we cannot decide sequence of function execution.
+
+2)complexity of algorithm- It is measure of performance of algorithm.
+                           Time complexity -measure of time required by algorithm to process 'n' size input.
+                                           O(n logn) average
+                                           O(n*n) worst case
+                                           O(nlogn) best case
+                           space complexity -measure of space required by algorithm to process 'n' size input.
+                            O(logn)
+                           Big O notation is used to represent algorithmic complexity
+                           O(1)<O(logn)<O(√n)<O(n)<O(nlogn)<O(n2)<O(n3)<O(2n)<O(10n)<O(n!)
+                           algorithm with less complexity considered as efficient.
+3)output-It contains 
+
+                           i)Flat profile :How many times each function got called, total times involved, sorted by time
+                             consumed.
+
+                           ii)Call-graph: Each function, who called it, whom it called, and how many times.
+                           
+                           iii)Index: Cross-reference of function names and gprof numbers. 
+                          
+4)number of comparisons in worst case 
+                          =  n(n−1)/2
