@@ -1,6 +1,7 @@
 Problem statement: 
 
 Get your own 8 bit gray face image (size 128*128 pixel)
+
 A) Compress it using Vector Quantization.
 B) Encode it using Huffman Coding
 
