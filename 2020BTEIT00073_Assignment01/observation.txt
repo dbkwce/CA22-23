@@ -1,0 +1,9 @@
+(1)Time Complexity of Quick Sort Algorithm:
+
+ For the best case, array would be sorted so there would be no swaps but still there be n*log n comparisons, provided size of input is n.
+ Best Case Time Complexity: O(nlogn)
+ Average Case Time Complexity: O(nlogn)
+ Worst Case Time Complexity: O(n^2)
+
+(2)If We can decide Sequence of Algorithm:
+ No, we can't decide the sequence of functions executed in gprof.
