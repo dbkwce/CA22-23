@@ -1,7 +1,13 @@
-Problem statement: Given the image file of size 128 x 128 pixel, compress the file using Vector Quantization (VQ) algorithm.
-4 x 4 block size is to be used as vector
-Code book needs to be generated.
-Image to be reconstructed and result to be analysed
+Problem statement: 
+
+Get your own 8 bit gray face image (size 128*128 pixel)
+A) Compress it using Vector Quantization.
+B) Encode it using Huffman Coding
+
+
 Deadline for submission will be Monday 8th Aug by 11:59pm
 
-**Read on the above topic, if you have any queries, we will discuss in tomorrows lab session, in the class.**
+**Submit following files in Folder Assignment 2 on Github**
+1. Seprate code file for VQ and Huffman coding
+2. Your comments with performance parameters such as Compression ratio and encoding performance
+3. Input and reconstructed image
