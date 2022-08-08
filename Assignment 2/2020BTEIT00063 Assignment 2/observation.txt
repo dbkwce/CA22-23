@@ -1,0 +1,39 @@
+Name: Rutuja Khilare 
+PRN: 2020BTEIT00063
+Batch: T1
+
+Topic: Image Compression Using Vector Quantization and Encoding using Huffman Encoding
+
+
+Problem Statement: To use the Vector Quantization Algorithm to compressed an image.
+                   Get the Huffman code of the input image using Huffman Encoding Algorithm.
+
+
+1) Huffman file: 
+   Huffman encoding algorithm
+
+2) Images Folder:
+   2 images:
+   Original image: original.jpg
+   Compressed image: final.jpg
+
+3) Vector Quantization file: 
+      i) This folder has the Vector Quantization Algorithm in it which is C++ language.
+      ii) The source code is referred from a git repository.
+      iii) Source.cpp provides two clones of the original image in compressed formed.
+
+Performance: 
+
+      Vector Quantization Algorithm: 
+
+            By calculating the Compression Ratio of the image: 
+
+                              compression ratio = (uncompressed image size / compressed image size)
+                                                = ( 9.56/4.12 )
+                                                =  2.32038 ~ (2.32)
+
+      Huffman Encoding Algorithm:   
+
+            The encoding performance for the Huffman is based on the number of various bits present inside the image.
+
+            The Time Complexity of the algorithm is O(nlogn), where n is number of different nodes present inside the Huffman tree.
