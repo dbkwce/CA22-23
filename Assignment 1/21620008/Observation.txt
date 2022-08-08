@@ -1,0 +1,45 @@
+As per my Observation,
+
+************************Number of checks******************************
+Here Checks are the number of times out swap function called, which we can see in profiler Output.
+The Number of checks for sorting 1000 random numbers  : 2343.
+The Number of checks for sorting 10000 random numbers : 31565.
+
+When the 10000 sorted numbers are used then swaps are 9999 which are relatively less but the number of time partition function called is 9999. i.e 9999 partitions have been made.
+
+The Time Complexity of the Algorithm will definately depend on the Input.
+As we choose one pivot element and arrange the less and greater values by considering pivot
+so as the pivot will get its correct position.
+
+
+**************************if we can decide the sequence of functions executed from 'gprof' *************
+
+In the profiler output of gprof if we see "Call Graph" it shows the functinon calling and the dependancy of functions on one another
+
+If we can Decide the sequence of functions execute from gprof-
+Then Actually we can manipulate the sorting function, i.e. we can make our ouput unsorted for any particular partition.
+So we will have a control towards the sorting procedure of quicksort.
+
+*********************************Time Complexity*********************************
+
+Best Case,
+For our algorithm to run optimally our pivot must have the middle element of that partition 
+so that two equal partitions will be made and we will achieve best case complexity.
+Time Complexity:-  O(nlog(n))
+
+In Average Case,
+We cant gurenty always the pivot is the middle element, then the complexity of this algorithm 
+will increase according to the pivot position.
+Time Complexity:-  O(nlog(n))
+
+In worst case, 
+i.e If array is already sorted and always we are taking first and last element then worst case can occur
+with n*n comparsions.
+Time Complexity:-  O(n^2)
+
+***********************Space Complexity****************************
+
+At Each recursive call the same array is forwarded but the variables need to create on the local stack. So This sort Does not have
+constant space complexity.
+It depends on the partitions made so we can assume it roughly O(nlog(n))
+Space Complexity:- O(nlog(n))

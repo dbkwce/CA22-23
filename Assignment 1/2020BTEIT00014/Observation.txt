@@ -1,0 +1,14 @@
+2020BTEIT00014
+
+1)
+ 	No, because it only shows the Time spent on the Function and its Children and the Number of times the Function is called Recursively and Non Recursively. 
+	But there is no Indication of the Sequence of the functions.
+
+2)
+	Best Case for the Quicksort occurs, when the Sorted Position of the Pivot is in the Middle of the Array, then Divide it in 2 equal array hence it require log(n) time,
+	for n elements. Therefore here the Time Complexity is O(nlog(n)).
+
+	Worst Case for the Quicksort occurs, when the Sorted Position of the Pivot is any end of the Array, then it can't divide the array. Hence require n time for n elements.
+	Therefore here the Time Complexity is O(n^2).
+
+	For Average Case O(nlog(n)) is the TIme Complexity.

@@ -1,0 +1,6 @@
+//Vijay Laxman Kare //2020BTEIT00054 
+
+*Can we decide the sequence of functions executed from 'gprof'? -No , because all the entries on gprof are not in sequence. -They are arranged
+according to the time teken / complexity in which they are sorted. 
+
+#Time Complexity for QuickSort is O(nlogn)
