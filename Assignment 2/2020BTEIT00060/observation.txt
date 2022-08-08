@@ -4,7 +4,7 @@ Computer Algorithm
 Assignment 2
 
 Images :
-      i)  "input.png" (original and uncompressed) and "output.png' (original and compressed).
+      i)  "input_image.png" (original and uncompressed) and "output_image.png' (original and compressed).
       ii) Properties of "input.jpg" : 
                         Dimensions: 128x128 px
                         Size: 6.56 kB
