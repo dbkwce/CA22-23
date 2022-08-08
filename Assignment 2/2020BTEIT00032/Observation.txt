@@ -1,0 +1,11 @@
+Vector Quantization
+- Vector Quantization is a technique for data compression (images)
+- It divides large set of points to small sections
+- It generate codebook using LBG algorithms 
+
+
+
+Input -> originalImage  , Size = 33kb
+
+
+Output -> compressedImage , size = 5 kb
