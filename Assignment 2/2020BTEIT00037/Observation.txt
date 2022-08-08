@@ -1,0 +1,20 @@
+//Name: Abhishek Dattatray Kabade
+//PRN: 2020BTEIT00037
+
+Images Folder:
+      i) It has two images "input.jpeg" (original and uncompressed) and "output.jpeg" (original and commpressed).
+      ii) Properties of "input.jpeg" : 
+                        Dimensions: 128x128 px
+                        Size: 5.04 kB
+
+      iii) Properties of "output.jpeg" :
+                        Dimensions: 95x92 px 
+                        Size: 3.34 kB
+
+
+Observation of huffman Encoding:
+
+ The output from Huffman's algorithm can be viewed as a variable-length 
+ code table for encoding a source symbol (such as a character in a file). 
+ The algorithm derives this table from the estimated probability or frequency 
+ of occurrence (weight) for each possible value of the source symbol.
