@@ -1,0 +1,18 @@
+
+1] if we can decide the sequence of functions executed from 'gprof' :
+	
+	generally functions are executed with depends upon the sequcence they are called, 
+	so if we can change the order they are being called can affect the further data to be displayed in profiler output,
+	and may be the ouput will be uncertain.
+	
+	So, the profiler always gives the output of the functions in a linear manner, and the data can be accurate.
+
+
+2] Complexity of Quick sort algorithm
+	
+	a] Best case : 	O(n*logn)
+	b] Average case : O(n*logn)
+	c] Worst Case : O(n2)
+	
+	
+	

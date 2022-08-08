@@ -1,0 +1,23 @@
+Name: Aditi Jitendra Sawant
+PRN: 2020BTEIT00027
+
+Computer Algorithms
+Assignment 1
+
+
+1. Can we decide the sequence of functions executed from 'gprof'?
+
+Observation-
+	No, we can't decide the sequence of functions. 
+	In 'gprog' functions are displayed according to the order they occur in the code.		
+	'gprof' shows the time spent for each function and it's children and also the number of times each function is called.
+
+2. Complexity of Quicksort algorithm:
+	Quicksort is a divide and conquer algorithm.
+	Time complexity of quicksort in best and average case is O(n*log n) and 
+	in worst case it is O(n^2).
+	Best case is when pivot is middle element.
+	Average case is when elements are properly jumbled.
+	Worst case is when the elements are already ascending or decending.
+	
+	Space complexity of quicksort algorithm is O(n*log n). n).

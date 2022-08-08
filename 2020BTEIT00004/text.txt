@@ -1,0 +1,9 @@
+ for n sized array no of comparisons will be n-1 so when 
+ n=5,then the max no of comparisons will be 4,
+ n=10,then the max no of comparisons will be 9,
+Time complexity=O(n logn)
+Space complexity=O(n)
+
+ n=50,then the max no of comparisons will be 49,
+ n=100,then the max no of comparisons will be 99,
+We can not decide the sequence of function executed from 'gprof' but we can count the no of calls generated for each function in the algorithm.

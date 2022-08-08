@@ -1,0 +1,25 @@
+Algorithm  for Quick Sort :
+
+Step 1): Selecting Pivot
+The process starts by selecting one element (known as the pivot) from the list; this can be any element. A pivot can be:
+
+Any element at random
+The first or last element
+Middle element
+Let's say here we will take the last element as pivot.
+
+Step  2) : Rearranging the Array
+Now, the goal here is to rearrange the list such that all the elements less than the pivot are towards the left of it, and all the elements greater than the pivot are towards the right of it.
+
+
+Step 3). Dividing Subarrays
+
+Once we have partitioned the array, we can break this problem into two sub-problems. First, sort the segment of the array to the left of the pivot, and then sort the segment of the array to the right of the pivot.
+
+Step 4 : In the same way that we rearranged elements in step 2, we will pick a pivot element for each of the left and right sub-parts individually.
+
+Now, we will rearrange the sub-list such that all the elements are less than the pivot point, which is towards the left.
+
+Repeat the same process for the right-side sub-list. The subarrays are subdivided until each subarray consists of only one element.
+
+Now At this point, the array is sorted .

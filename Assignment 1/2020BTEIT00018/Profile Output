@@ -1,14 +1,12 @@
 Flat profile:
 
 Each sample counts as 0.01 seconds.
- no time accumulated
-
   %   cumulative   self              self     total           
- time   seconds   seconds    calls  Ts/call  Ts/call  name    
-  0.00      0.00     0.00      916     0.00     0.00  partition(int*, int, int)
-  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
-  0.00      0.00     0.00        1     0.00     0.00  quick(int*, int, int)
-  0.00      0.00     0.00        1     0.00     0.00  printArr(int*, int)
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+100.00      0.10     0.10    10000     0.01     0.01  Partition(int*, int, int)
+  0.00      0.10     0.00    10000     0.00     0.00  swap(int*, int*)
+  0.00      0.10     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.10     0.00        1     0.00   100.00  Quick(int*, int, int)
 
  %         the percentage of the total running time of the
 time       program used by this function.
@@ -46,23 +44,28 @@ notice and this notice are preserved.
 		     Call graph (explanation follows)
 
 
-granularity: each sample hit covers 4 byte(s) no time propagated
+granularity: each sample hit covers 4 byte(s) for 10.00% of 0.10 seconds
 
 index % time    self  children    called     name
-                0.00    0.00     916/916         quick(int*, int, int) [10]
-[8]      0.0    0.00    0.00     916         partition(int*, int, int) [8]
+                                                 <spontaneous>
+[1]    100.0    0.00    0.10                 main [1]
+                0.00    0.10       1/1           Quick(int*, int, int) [3]
 -----------------------------------------------
-                0.00    0.00       1/1           _GLOBAL__sub_I__Z9partitionPiii [12]
-[9]      0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [9]
+                0.10    0.00   10000/10000       Quick(int*, int, int) [3]
+[2]    100.0    0.10    0.00   10000         Partition(int*, int, int) [2]
+                0.00    0.00   10000/10000       swap(int*, int*) [10]
 -----------------------------------------------
-                                1832             quick(int*, int, int) [10]
-                0.00    0.00       1/1           main [6]
-[10]     0.0    0.00    0.00       1+1832    quick(int*, int, int) [10]
-                0.00    0.00     916/916         partition(int*, int, int) [8]
-                                1832             quick(int*, int, int) [10]
+                               20000             Quick(int*, int, int) [3]
+                0.00    0.10       1/1           main [1]
+[3]    100.0    0.00    0.10       1+20000   Quick(int*, int, int) [3]
+                0.10    0.00   10000/10000       Partition(int*, int, int) [2]
+                               20000             Quick(int*, int, int) [3]
 -----------------------------------------------
-                0.00    0.00       1/1           main [6]
-[11]     0.0    0.00    0.00       1         printArr(int*, int) [11]
+                0.00    0.00   10000/10000       Partition(int*, int, int) [2]
+[10]     0.0    0.00    0.00   10000         swap(int*, int*) [10]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__Z4swapPiS_ [12]
+[11]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [11]
 -----------------------------------------------
 
  This table describes the call tree of the program, and was sorted by
@@ -155,5 +158,5 @@ notice and this notice are preserved.
 
 Index by function name
 
-   [9] __static_initialization_and_destruction_0(int, int) [11] printArr(int*, int)
-  [10] quick(int*, int, int)   [8] partition(int*, int, int)
+  [11] __static_initialization_and_destruction_0(int, int) [3] Quick(int*, int, int)
+  [10] swap(int*, int*)        [2] Partition(int*, int, int)

@@ -1,0 +1,19 @@
+Question:
+Compute a total number of comparisons used in the program for 
+different values of n (10, 100, 1000, 10000)
+3. An 'observation.txt' text file containing your say on 
+       - if we can decide the sequence of functions executed from 'gprof' 
+       - Comment on the complexity of the algorithm 
+
+Solution:
+The no of comparisons will be worst when the array is reverse sorted ie. for n sized array no of
+comparisons will be n-1 so when 
+n=10,then max no of comparisons will be 9,
+n=100,then max no of comparisons will be 99,
+n=1000,then max no of comparisons will be 999,
+n=10000,then max no of comparisons will be 9999,
+No, we can not decide the sequence of function executed from 'grop' 
+but we can count the no of calls generated for each funciton in the algorithm.
+
+The time complexity of the algorithm is O(n*logn) and the space complexity is O(n) where
+is the no of elements to be sorted.

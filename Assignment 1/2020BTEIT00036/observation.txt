@@ -1,0 +1,17 @@
+No we cannot decide the sequence of functions executed from 'gprof'
+because the sequence of functions depend upon how we define our functions inside our program
+
+No of function calls vs the value of n we provide it with :
+n       no of function calls 
+10		30 to 40 		     
+100 	500 to 700		     
+1000 	7000 to 9000		 
+10000 	85000 to 125000		 
+
+
+Complexity of the algorithm
+omega : best case time complexity : n*logn
+theta : average case time complexity : n*logn
+big O : worst case time complexity : n*n
+
+Space complexity : n*logn
