@@ -1,0 +1,5 @@
+original file size: 28.8Kb
+compressed file size: 19.4Kb
+Compression ratio=0.67
+Lossless compression best performance is shown by huffman encoding on factors like time 
+taken to compress and size of the image in pixels. 
