@@ -1,0 +1,6 @@
+Name: Nidhish Chauhan 
+PRN: 2020BTEIT00069 
+Assignment 2 CA
+
+
+Compressing image with vector quantization technique. Python's OpenCV library, it begins from generating codebook with Linde-Buzo-Grey (LBG) algorithm, encoding and then decoding the image. It is slower to create a codebook in python so we can use external libraries for faster implementation.
