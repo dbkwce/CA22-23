@@ -1,0 +1,4 @@
+Image compression using vector quantization.
+The original size of the image is 749 KB
+And the compressed size of the image is 79 KB
+Image is compressed with compression ratio of 79.5% compression.
