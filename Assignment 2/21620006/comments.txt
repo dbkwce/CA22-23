@@ -1,0 +1,35 @@
+Name:vaishnavi sachin wadar 
+PRN:21620006
+
+1) The Huffman folder contains the huffman.c file, which is where the Huffman Algorithm's C code is located. After execution, it displays the encoded image and bit values.
+ii) Geek for Geeks referred to it.
+
+iii) A "original.jpeg" image, which serves as the grayscale image, is also contained in the folder.
+
+iv) The binary-encoded "original.jpeg" image is contained within the encode.txt file.
+
+v) The huffman codes.txt file contains the Huffman tree path for each bit contained in the "origial.jpeg" (which typically varies from 0 to 254).
+
+
+
+2) Pictures Folder
+
+I It contains the original and uncompressed versions of "gray.bmp" as well as "gray compressed.bmp" (original and commpressed).
+
+ii) The "gray.bmp" file's properties
+
+Size: 128x128 pixels
+
+Measures 20 kB
+
+
+
+iii) "compressed.jpeg"
+
+Size: 131x33 pixels
+
+Measures 10 kB
+
+
+
+3) VQ
