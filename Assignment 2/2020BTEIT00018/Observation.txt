@@ -1,0 +1,45 @@
+Name: Ayush Wadalkar
+PRN: 2020BTEIT00018
+Subject: Computer Algorithm
+Assignment Number 2
+
+Topic: Image Compression Using Vector Quantization and Encoding using Huffman Encoding
+
+
+Aim: To use the Vector Quantization Algorithm to compressed an 128x128 px image.
+    Also get the Huffman code of the inputed image using Huffman Encoding Algorithm.
+
+
+
+1) Images Folder:
+      i) It has two images "gray.bmp" (original and uncompressed) and "gray_compressed.bmp" (original and commpressed).
+      ii) Properties of "original.jpg" : 
+                        Dimensions: 128x128 px
+                        Size: 2.27 kB
+
+      iii) Properties of "compressed.jpg" :
+                        Dimensions: 90x90 px 
+                        Size: 1.27 kB
+
+2) VQ folder: 
+      i) This folder has the Vector Quantization Algorithm in it which is C++ language.
+      ii) The source code is referred from a git repository.
+      iii) Source.cpp provides two clones of the original image in compressed formed.
+
+Performance: 
+
+      Vector Quantization Algorithm: 
+
+            By calculating the Compression Ratio of the image: 
+
+                              compression ratio = (uncompressed image size / compressed image size)
+                                                = (2.27 / 1.27)
+                                                =  1.80158 
+
+            Thus VQ is one of the lossy compression algorithms and which is clearly visible by looking the compression ratio.
+
+      Huffman Encoding Algorithm:   
+
+            The encoding performance for the Huffman is on the number of various bits present inside the image.
+
+            The general Time Complexity of the algorithm is O(nlogn), where n is number of different nodes present inside the Huffman tree.
