@@ -1,1 +1,14 @@
 
+PRN 2020BEIT00014
+Name RAHUL KUMAR GOP
+
+VECTOR QUANTIZATION
+
+Quantization is the process of approximating continuous data with discrete Data.
+We use Vector Quantization for Image compression.
+First we set the image data into an array of Vectors. Then make a lookup table we can either set it to
+first few vectors or any random vectors from the data set.
+Now compare the vectors and lookup table & maintain a Mapping array to map each vectors to it corresponding
+Lookup tables Vector. Take average of individual elements and replace to with the nearest vector from 
+the table. Do it for many iteration till the data change is very Low. The final data can be opened as image. 
+Thus we get a compressed Image from a Normal Image.
