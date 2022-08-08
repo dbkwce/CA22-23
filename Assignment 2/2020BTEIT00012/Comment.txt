@@ -1,0 +1,20 @@
+Vector Quantization:
+
+	Vector quantization (VQ) is an efficient coding technique to quantize signal vectors.  A VQ compression procedure include codebook generation
+	In codebook generation, similar vectors are grouped into clusters, and each cluster is assigned to a single representative vector called a codevector.Each input vector is then compressed by replacing it with the nearest codevector referenced by a simple cluster index. The index (or address) of the matched codevector in the codebook is then transmitted to the decoder over a channel and is used by the decoder to retrieve the same codevector from an identical codebook. This is the reconstructed reproduction of the corresponding input vector. Compression is thus obtained by transmitting the index of the codevector rather than the entire codevector itself.
+
+Huffman Encoding:
+	
+	Combine the two lowest probability leaf nodes into a new node.
+
+	Replace the two leaf nodes by the new node and sort the nodes according to the new probability values.
+
+	Continue this until we get a single node as root
+
+	Backtrack from the root, assigning ‘0’ or ‘1’ to each intermediate node, till we reach the leaf nodes.
+
+Compression Ratio:
+
+The size of i/p image is 1.38mb.
+The size of compressed imgage is 244kb.
+
