@@ -1,0 +1,27 @@
+ Images :
+      i)  "original.jpg" (original and uncompressed) and "compressed.jpg' (original and commpressed).
+      ii) Properties of "original.jpg" : 
+                        Dimensions: 128x128 px
+                        Size: 5.21 kB
+
+      iii) Properties of "compressed.jpg" :
+                        Dimensions: 80x78 px 
+                        Size: 2.38 kB
+                        
+Performance: 
+
+      Vector Quantization Algorithm: 
+    
+                              compression ratio = (uncompressed image size / compressed image size)
+                                                = (5.21/ 2.35)
+                                                =  2.2170212766
+
+
+      Huffman Encoding Algorithm:   
+
+            The encoding performance for the Huffman depends on the number of  bits present inside the image.
+
+            Time Complexity of the algorithm is O(nlogn), where n is number of different nodes present inside the Huffman tree.
+            
+            
+Reference : https://github.com/leofishc/vector-quantization-image-compression.git
