@@ -1,0 +1,10 @@
+#Image compression using vector quantization.
+#The original size of the image is 48.4 KB
+And the compressed size of the image is 37.4 KB
+Image is compressed with compression ratio of 1.29% compression.
+Quantization is the process of approximating continuous data with discrete Data.
+now we will compare the vectors and by maintaining the mapping of array to map each and every vector corresponding to it.we will be doing many iterations for this till we will get data change to bvery low. final data can be opened as image and then we get a compressed image from the whatvever image we have uploaded as input.
+ The output from Huffman's algorithm can be viewed as a variable-length.
+
+
+
