@@ -9,7 +9,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 
-image = plt.imread("flower.jpg")
+image = plt.imread("background.jpg")
 plt.imshow(image)
 plt.axis('off')
 plt.show()

@@ -1,4 +1,14 @@
 Image compression using vector quantization.
+
+	Vector quantization (VQ) is an efficient coding technique to quantize signal vectors.  A VQ compression procedure include codebook generation
+	In codebook generation, similar vectors are grouped into clusters, and each cluster is assigned to a single representative vector called a codevector.Each input vector is then compressed by replacing it with the nearest codevector referenced by a simple cluster index. 
+	The index of the matched codevector in the codebook is then transmitted to the decoder over a channel and is used by the decoder to retrieve the same codevector from an identical codebook. This is the reconstructed reproduction of the corresponding input vector. 
+	Compression is thus obtained by transmitting the index of the codevector rather than the entire codevector itself.
+
 The original size of the image is 749 KB
 And the compressed size of the image is 79 KB
-Image is compressed with compression ratio of 79.5% compression.
+Image is compressed with compression ratio of 89.5% compression.
+
+Huffman Coding Algorithm:
+  	Huffman coding is a lossless data compression algorithm
+	Time Complexity of algorithm is O(nlogn)
