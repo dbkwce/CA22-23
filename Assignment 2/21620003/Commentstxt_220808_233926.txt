@@ -1,0 +1,21 @@
+1) The C code for the Huffman Algorithm can be found in the huffman.c file, which can be found in the Huffman subdirectory. Following execution, the encoded image and bit values are shown.
+
+ii) It was mentioned in Geek for Geeks.
+
+iii) The folder also has a picture named "original.jpeg," which is used as the grayscale image.
+
+iv) The encode.txt file contains the binary-encoded "original.jpeg" image.
+
+v) The Huffman tree route for each bit present in the "original.jpeg" is listed in the huffman codes.txt file (which typically varies from 0 to 254).
+
+Photographs Folder
+
+I It includes "gray.bmp" in both its original, uncompressed, and compressed forms (original and commpressed).
+
+ii) The attributes of the "gray.bmp" file
+
+128x128 pixels in size
+
+grey compressed.bmpproperties :'s
+
+131x33 pixels in size
