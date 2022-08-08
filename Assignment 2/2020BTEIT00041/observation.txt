@@ -1,0 +1,9 @@
+Name: Om Vivek Gharge
+PRN: 2020BTEIT00041
+
+
+Orginal Image size: 56 KB
+
+Compressed Image size: 40 KB
+
+Compression Ratio : 28.57%
