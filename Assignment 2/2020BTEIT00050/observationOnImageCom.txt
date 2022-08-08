@@ -1,0 +1,20 @@
+Image compression is a type of data compression applied to digital images without degrading the quality of the image to an unacceptable level. The reduction in file size allows more images to be stored in a given amount of disk or memory space. It also reduces the time required for images to be sent over the Internet or downloaded from web pages.
+Image compression algorithms take advantage of visual perception and the statistical properties of image data to provide superior results. There are two kinds of image compression methods — lossless vs lossy. Let’s take a quick look at them both.
+We will be using the K-Means Clustering technique for image compression which is a type of Transform method of compression. Using K-means clustering, we will perform quantization of colors present in the image which will further help in compressing the image.
+Step by Step walkthrough of the Implementation:
+
+Image Input : Load the image from the disk.
+Reshape Input Image : The size of the input image is (rows, cols, 3), flatten all the pixel values to a single dimension of size (rows*cols) and the dimension of each pixel is 3 representing RGB values. The size of the flatten image will be (rows*cols, 3).
+Clustering : Implement the k-Means clustering algorithm to find k-centroid points that represent its surrounding color combination.
+Replace each pixel with its centroid points : All the color combination of (rows*cols) number of pixels is now represented by its centroid points. Replace the value of each of the pixels with its centroid point.
+Reshape Compressed Image: Display the output image and store it to disk.
+
+Observations from the image :
+
+Dimensions of all the compressed images (compressed_image_k.png) are the same as that of input images (original_image.png).
+The size of the compressed image decreases as k decreases.
+For the value of k=32, 64, 128, 256, the output compressed images seem reasonably good and lose colors, and are not visible to a human eye. The size of the compressed image decreases by almost 3 times compared to the original image for k=32.
+For the value of k=16, 8, the output compressed images lose a lot of colors and the lossy compression is visible to a human eye.
+For the value of k=4, 2, the output compressed images lose almost all the colors, and the content of the image is also lost.
+
+
