@@ -1,0 +1,14 @@
+1. Original_img.png ->Dimensions: 128x128 px
+                       Size: 7.36 kB
+2. Compressed_img.png -> Dimensions: 80x78 px 
+                        Size: 3.61 kB
+
+By calculating the Compression Ratio of the image: 
+
+                              compression ratio = (uncompressed image size / compressed image size)
+						= 7.36/3.61
+						=2.038
+
+
+Huffman Encoding Time Complexity:The time complexity for encoding each unique character based on its frequency is O(nlog n).Extracting minimum frequency from the priority queue takes place 2*(n-1) times and its complexity is O(log n).
+Thus the overall complexity is O(nlog n).
