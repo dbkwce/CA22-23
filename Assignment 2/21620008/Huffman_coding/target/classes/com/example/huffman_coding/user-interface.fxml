@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="402.0" prefWidth="342.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.huffman_coding.UserInterfaceController">
+    <TextField fx:id="txt_source_path" alignment="CENTER" layoutX="46.0" layoutY="74.0" prefHeight="30.0" prefWidth="250.0" promptText="Source file path" />
+    <TextField fx:id="txt_destn_path" alignment="CENTER" layoutX="46.0" layoutY="131.0" prefHeight="30.0" prefWidth="250.0" promptText="Output file path" />
+    <Button fx:id="btn_encode" alignment="CENTER" layoutX="103.0" layoutY="197.0" mnemonicParsing="false" onAction="#btnEncodeClicked" prefHeight="36.0" prefWidth="136.0" text="Encode">
+        <font>
+            <Font name="System Bold" size="16.0" />
+        </font>
+    </Button>
+    <Button fx:id="btn_decode" layoutX="103.0" layoutY="255.0" mnemonicParsing="false" onAction="#btnDecodeClicked" prefHeight="37.0" prefWidth="136.0" text="Decode">
+        <font>
+            <Font name="System Bold" size="17.0" />
+        </font>
+    </Button>
+    <Label fx:id="done" alignment="CENTER" layoutX="93.0" layoutY="401.0" prefHeight="38.0" prefWidth="156.0" text="Done." textAlignment="CENTER" visible="false">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+    </Label>
+   <Label fx:id="label_msg" layoutX="147.0" layoutY="334.0" text="Done" textFill="#0a9c25">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+</AnchorPane>
