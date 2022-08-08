@@ -1,0 +1,10 @@
+ Huffman Encoding Algorithm:   
+
+            The encoding performance for the Huffman is on the number of various bits present inside the image.
+
+            The general Time Complexity of the algorithm is O(nlogn), where n is number of different nodes present inside the Huffman tree.
+            
+            
+              compression ratio = (uncompressed image size / compressed image size)
+                                                = (2.36/ 1.25)
+                                                =  1.888
