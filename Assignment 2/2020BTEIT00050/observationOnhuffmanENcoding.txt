@@ -1,0 +1,16 @@
+The technique works by creating a binary tree of nodes.
+ A node can be either a leaf node or an internal node. 
+ Initially, all nodes are leaf nodes, which contain the character itself, 
+ the weight (frequency of appearance) of the character. 
+ Internal nodes contain character weight and links to two child nodes. 
+ As a common convention, bit 0 represents following the left child, and 
+ a bit 1 represents following the right child. A finished tree has n leaf 
+ nodes and n-1 internal nodes. It is recommended that Huffman Tree should 
+ discard unused characters in the text to produce the most optimal code lengths.
+
+ Result of huffman Encoding:
+
+ The output from Huffman's algorithm can be viewed as a variable-length 
+ code table for encoding a source symbol (such as a character in a file). 
+ The algorithm derives this table from the estimated probability or frequency 
+ of occurrence (weight) for each possible value of the source symbol.
