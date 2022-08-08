@@ -1,0 +1,12 @@
+Vector Quantization
+
+If the input image has 256 shades of gray, we can visualize the vector space as the [0,0]-[255,255] square in the plane. 
+We can then take the two components of the vectors as XY coordinates and plot a dot for each vector found in the input image.
+
+
+Performance of Huffman Coding
+
+Time complexity: O(nlogn) where n is the number of unique characters. 
+If there are n nodes, extractMin() is called 2*(n – 1) times. extractMin() takes O(logn) time as it calles minHeapify(). 
+So, overall complexity is O(nlogn).
+If the input array is sorted, there exists a linear time algorithm.
