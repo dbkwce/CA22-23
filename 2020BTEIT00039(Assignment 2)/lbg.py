@@ -1,4 +1,6 @@
-
+#PRN:2020BTEIT00039
+#Name:Prasanna Jamdar
+#Assignment-2
 
 import numpy as np
 from collections import defaultdict
