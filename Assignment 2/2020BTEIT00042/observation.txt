@@ -1,0 +1,11 @@
+Huffman coding is a compression methods, that is useful in image and video compression .
+When applying Huffman encoding technique on an Image, the source symbols can be either pixel intensities of the Image,
+ or the output of an intensity mapping function.
+
+The performance of the Huffman encoding algorithm is, 
+therefore, 0.28/1 = 28% worse than optimal in this case.
+
+ The idea of extended Huffman coding is to encode a sequence of source symbols instead of individual symbols.
+ The time complexity for encoding each unique character based on its frequency is O(nlog n).
+ Extracting minimum frequency from the priority queue takes place 2*(n-1) times and its complexity is O(log n).
+ Thus the overall complexity is O(nlog n). 
