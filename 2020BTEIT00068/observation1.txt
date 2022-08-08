@@ -1,0 +1,53 @@
+Name: Mansi Sharadkumar Patil
+PRN: 2020BTEIT00068
+Subject: Computer Algorithm
+
+Topic: Image Compression Using Vector Quantization and Encoding using Huffman Encoding
+
+
+Aim: To use the Vector Quantization Algorithm to compressed an 128x128 px image.
+    Also get the Huffman code of the inputed image using Huffman Encoding Algorithm.
+
+
+First an introduction to my file structure:
+
+1) Huffman folder: 
+      i) It consist of the huffman.c file which is the contains the C code of the Huffman Algorithm. It gives the encoded image and bits values after the execution.
+      ii) It was referred from Geek for Geeks.
+      iii) The folder also has a "gray.bmp" image which is used my grayscale image.
+      iv) encode.txt has the binary encoded image of the "gray.bmp" inside it.
+      v) Huffman tree path for all the bits present inside the "gray.bmp" (commonly ranges from 0-254) is stored in huffman_codes.txt.
+
+2) Images Folder:
+      i) It has two images "gray.bmp" (original and uncompressed) and "gray_compressed.bmp" (original and commpressed).
+      ii) Properties of "gray.bmp" : 
+                        Dimensions: 128x128 px
+                        Size: 17 kB
+
+      iii) Properties of "gray_compressed.bmp" :
+                        Dimensions: 131x33 px 
+                        Size:9 kB
+
+3) VQ folder: 
+      i) This folder has the Vector Quantization Algorithm in it which is C++ language.
+      ii) The source code is referred from a git repository.
+      iii) Source.cpp provides two clones of the original image in compressed formed.
+
+Performance: 
+
+      Vector Quantization Algorithm: 
+
+            By calculating the Compression Ratio of the image: 
+
+                              compression ratio = (uncompressed image size / compressed image size)
+                                                = (17 / 9)
+                                                =  1.88 
+
+            Thus VQ is one of the lossy compression algorithms and which is clearly visible by looking the compression ratio.
+
+      Huffman Encoding Algorithm:   
+
+            The encoding performance for the Huffman is on the number of various bits present inside the image.
+
+            The general Time Complexity of the algorithm is O(nlogn), where n is number of different nodes present inside the Huffman tree.
+ 
