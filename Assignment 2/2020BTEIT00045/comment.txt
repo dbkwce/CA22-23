@@ -1,0 +1,6 @@
+Name: Vedant Joshi
+PRN: 2020BTEIT0045
+
+Data compression ratio is defined as the ratio between the uncompressed size and compressed size: Thus, a representation that compresses a file's storage size from 10 MB to 2 MB has a compression ratio of 10/2 = 5, often notated as an explicit ratio, 5:1 (read "five" to "one"), or as an implicit ratio, 5/1.
+Huffman encoding takes this idea to the extreme. Characters that occur most often, such the space and period, may be assigned as few as one or two bits.
+The Observation was it takes more time to compress an image in Vector quantization while in Huffman coding does compression faster.
