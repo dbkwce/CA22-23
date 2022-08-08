@@ -5,10 +5,10 @@ Each sample counts as 0.01 seconds.
 
   %   cumulative   self              self     total           
  time   seconds   seconds    calls  Ts/call  Ts/call  name    
-  0.00      0.00     0.00      916     0.00     0.00  partition(int*, int, int)
-  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
-  0.00      0.00     0.00        1     0.00     0.00  quick(int*, int, int)
-  0.00      0.00     0.00        1     0.00     0.00  printArr(int*, int)
+  0.00      0.00     0.00       14     0.00     0.00  swap(int, int)
+  0.00      0.00     0.00        6     0.00     0.00  quickSort(int*, int, int)
+  0.00      0.00     0.00        5     0.00     0.00  partition(int*, int, int)
+  0.00      0.00     0.00        2     0.00     0.00  displayArray(int*, int)
 
  %         the percentage of the total running time of the
 time       program used by this function.
@@ -49,20 +49,27 @@ notice and this notice are preserved.
 granularity: each sample hit covers 4 byte(s) no time propagated
 
 index % time    self  children    called     name
-                0.00    0.00     916/916         quick(int*, int, int) [10]
-[8]      0.0    0.00    0.00     916         partition(int*, int, int) [8]
+                0.00    0.00      14/14          partition(int*, int, int) [10]
+[8]      0.0    0.00    0.00      14         swap(int, int) [8]
 -----------------------------------------------
-                0.00    0.00       1/1           _GLOBAL__sub_I__Z9partitionPiii [12]
-[9]      0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [9]
+                                   5             quickSort(int*, int, int) [9]
+                0.00    0.00       1/6           main [6]
+                0.00    0.00       5/6           displayArray(int*, int) [11]
+[9]      0.0    0.00    0.00       6+5       quickSort(int*, int, int) [9]
+                0.00    0.00       5/5           partition(int*, int, int) [10]
+                                   5             quickSort(int*, int, int) [9]
 -----------------------------------------------
-                                1832             quick(int*, int, int) [10]
-                0.00    0.00       1/1           main [6]
-[10]     0.0    0.00    0.00       1+1832    quick(int*, int, int) [10]
-                0.00    0.00     916/916         partition(int*, int, int) [8]
-                                1832             quick(int*, int, int) [10]
+                0.00    0.00       5/5           quickSort(int*, int, int) [9]
+[10]     0.0    0.00    0.00       5         partition(int*, int, int) [10]
+                0.00    0.00      14/14          swap(int, int) [8]
 -----------------------------------------------
-                0.00    0.00       1/1           main [6]
-[11]     0.0    0.00    0.00       1         printArr(int*, int) [11]
+                0.00    0.00       2/2           main [6]
+[11]     0.0    0.00    0.00       2         displayArray(int*, int) [11]
+                0.00    0.00       5/6           quickSort(int*, int, int) [9]
+-----------------------------------------------
+                                   1             __static_initialization_and_destruction_0(int, int) [13]
+[13]     0.0    0.00    0.00       0+1       __static_initialization_and_destruction_0(int, int) [13]
+                                   1             __static_initialization_and_destruction_0(int, int) [13]
 -----------------------------------------------
 
  This table describes the call tree of the program, and was sorted by
@@ -155,5 +162,5 @@ notice and this notice are preserved.
 
 Index by function name
 
-   [9] __static_initialization_and_destruction_0(int, int) [11] printArr(int*, int)
-  [10] quick(int*, int, int)   [8] partition(int*, int, int)
+  [11] displayArray(int*, int) [10] partition(int*, int, int)
+   [8] swap(int, int)          [9] quickSort(int*, int, int)

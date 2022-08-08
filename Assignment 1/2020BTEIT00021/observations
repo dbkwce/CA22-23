@@ -1,0 +1,29 @@
+Adwait Samak
+2020BTEIT00021
+CA Assignment 1
+
+Q- Can we decide the sequence of functions executed from 'gprof' ?
+
+Ans- No, we can't decide the sequnence of functions executed from gprof because all the function entries those are 
+     there on gprof are not in sequence as they called. They are arranged according to the time taken by them in sorted order.
+     
+     
+    
+Q- Time complexity analysis of the quick sort.
+
+Ans- Time complexity of entire recursion tree = Number of levels * Time taken for one level
+    = n/2^k = 1                            
+    = n = 2^k
+    = log n = k log 2                     In best case, the partition forms at the exact middle.
+    = k = log
+    = log n*n
+    Best Case: O(nlogn)
+    
+    Average Case: O(nlogn)
+    
+    
+    Worst Case: 2 + 3 + 4 + 5 + .....n    In worst case, the partition formed is at the ends.
+    = n(n+1)/2 -1
+    = n^2 + n
+    = O(n^2)
+    

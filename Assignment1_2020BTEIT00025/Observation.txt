@@ -1,0 +1,21 @@
+Name-Harshad Hanamant Jagadale
+PRN-2020BTEIT00025
+
+Q1.Can we decide the sequence of functions executed from 'gprof' ?
+
+Ans- We cannot decide the sequence of functions executed from gprof because 
+    gprof uses different sequences as they are based on time taken, than the     sequence on the program.
+    They are sorted in order of time taken by them.Functions called by gprof       are different from functions in the actual code.
+
+Q2.Comments on the complexity of the algorithm.
+
+Ans-Time complexity:
+    Best case complexity:O(nlogn)
+    Avarage case complexity:O(nlogn)
+    Worst case complexity:O(n^2)
+
+    Space complexity:O(nlogn)
+
+Interpretation:
+  Quick sort is one of the efficient sorting algorithms and is based on the splitting of an array(partition)into smaller ones and swapping(exchange) based  on the 'pivot' element selected.Due to these ,quick sort is also called as "partition Exchange" sort.Like Merge sort ,Quick sort also falls into the category of divide and conquer approach of problem-solving methodology.
+  
