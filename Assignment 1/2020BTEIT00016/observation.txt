@@ -1,0 +1,42 @@
+
+1.  - if we can decide the sequence of functions executed from 'gprof' 
+
+NO, As the gprof's Call graph shows how much time was spent in each function and its children and as the function displayed in call graph are according to their occurence in code and not as they are executed we can't decide the sequence of the functions 
+
+
+for example :
+
+suppose in main function there are two functions namely quicksort and printarray the functions performing as their name suggests
+
+now in call graph we would see quicksort and then printarray and then the functions that were called by quicksort but this is not they are executed as we know quicksort would make calls to swap and partitioning functions and then at last printarray would be executed hence gprof fails to give us the order of the function's execution
+
+
+
+
+2.  - Comment on the complexity of the algorithm 
+
+
+
+BEST CASE :	O(Nlog(N))
+
+Reason : The best caseof quicksort is when everytime the pivot is taken as the mean(middle) element such that arrays divides in half in each operation leading to log(n) states for n input and for n times so that makes in effectively O(Nlog(N))
+
+WORST CASE : 	O(N^2)
+
+Reason : The worst caseof quicksort is when the array is sorted in ascending or descending order what happens here is that array is never partitioned hence we have to do n steps n number of times hence having a complexity of O(N^2)
+
+So, there are  (N−1)+(N−2)+⋯+1 = (N−1)N2  comparisons. This is  O(N^2) .
+
+AVERAGE CASE :   O(Nlog(N))
+
+Reason : The average of all complexities is effectively O(Nlog(N))
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+
+
+Computer Algorithms Assignment 1
+
+Name: Rutuja Rajkumar Khilare
+PRN: 2020BTEIT00063
+Contact no.: 9579970159 
+ 
+ 
+Observation:
+1.Observations conclude that algorithm execution starts from main() function, later QuickSort() function is called where parameters passed are array, starting and ending index values. 
+2.QuickSort() starts execution where partition function is called which internally consists of swap function call. This cycle of recursive call continues until entire list is sorted.
+3.Profiling can help us determine the parts in program code that are time consuming and to decide the sequence of execution of functions can be decided by observing the index values mentioned in call graph.
+
+Complexity:
+Quick Sort is a sorting algorithm which uses divide and conquer technique.
+In quick sort we choose an element as a pivot and we create a partition of array around that pivot by repeating this technique for each partition we get our array sorted. 
+Complexity of algorithm varies depending upon the position of pivot:
+
+	Time Complexity:
+1.	If position of pivot is first in the list
+	=> Best Case Time = O(nlogn) if partitioning takes place in middle of list.
+	=> Worst Case Time = O(n^2) if partitioning takes place at any end of list.
+			     and the list is defined as sorted list.
+	=> Average Case Time = O(nlogn) 
+2.   If position of pivot is at middle of the list.
+	=> Best Case Time = O(nlogn) and the list can be defined as sorted list.
+	=> Worst Case Time = O(n^2) if partition is at any end of the list. In this Case we cannot define out list as sorted one.
+
+	Space Complexity:
+Space complexity of quicksort is O(logn) since it calls itself on the order of log(n) times at each recursive call a new stack frame is allocated.
+      
+

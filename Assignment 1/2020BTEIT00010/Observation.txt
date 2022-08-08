@@ -1,0 +1,33 @@
+
+PRN : 2020BTEIT00010
+Branch : IT
+Batch  : T1
+
+A. No, we cannot decide the sequence of functions executed from 'gprof' cause we only see.
+
+
+
+B. Time Complexity:
+
+1.Quicksort is a Divide and Conquer algorithm. It picks an element as a pivot and partitions the given array around the picked pivot. 
+ 
+2.The best-case time complexity of quicksort is O(n*logn).
+
+3.Average Case Complexity - It occurs when the array elements are in jumbled order that is not properly ascending and not properly descending. 
+  The average case time complexity of quicksort is O(n*logn).
+
+4.Worst Case Complexity - In quick sort, worst case occurs when the pivot element is either greatest or smallest element. 
+  Suppose, if the pivot element is always the last element of the array, the worst case would occur when the given array is sorted already in 
+  ascending or descending order. The worst-case time complexity of quicksort is O(n2).
+
+
+
+C. Comparison:
+  1. For input 10 , comparision = 21
+  2. for 100 , comparison = 330
+  3. For 1000, comparison = 3746
+  4. for 10000, caomparison = 37252
+
+
+
+D. As we can see that maximum percentage of programs's time has been taken a partition function .

@@ -1,0 +1,25 @@
+2020BTEIT00033
+Rajeshwari Ganesh Joshi
+Observation:
+
+1.	When input given was small time taken was very less as comparisions were very fewer.
+
+2.	It can be seen in gprof software tool using the commands.
+
+3.	As input increases time taken for sorting with the quicksort approach increases as calling of function takes place several times.
+
+4. No, we cannot decide the sequence. The functions are called as per the programme is written.
+
+Conclusion:
+1.The time taken to run the program completely is depend upon the number of inputs given.
+
+2. 
+Time Complexity:
+Best Case: O(n*logn)
+Average Case :O(n*logn)
+Worst Case: O(n2)
+
+3. 
+Space Complexity: O(n*logn)
+
+

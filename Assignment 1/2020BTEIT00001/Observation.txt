@@ -1,0 +1,20 @@
+Name: Nirmit Chattoo
+PRN NO: 2020BTEIT00001
+
+Can we decide the sequence of functions executed from 'gprof' ?
+
+The sequence of functions executed from gprof can't be determined because the function 
+entries on gprof are not in sequence as they were called.  Sorted by time taken, they are
+arranged according to their time taken.
+    
+Time complexity analysis of the quick sort    
+   
+   Average Case: O(logn)
+    
+   Worst Case: 2 + 3 + 4 + 5 + .....n
+    => n(n+1)/2 -1
+    => n^2 + n
+    => O(n^2)
+    
+    
+    

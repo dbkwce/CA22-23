@@ -1,0 +1,26 @@
+Name:Padmanabhan Shrikrishna Deokar
+PRN:2020BTEIT00024
+Subject:Computer algorithm
+Course code:5IT303
+
+
+
+1] If we can decide the sequence of funtions executed from 'gprof'
+No,we cannot decide the sequence of function executed from gprof because all the function entries those are there on gprof
+are not in sequence as they called.They are arrange according to the time taken by them in sorted order.
+
+2]Time complexity:
+ a)  Best case complexity=O(nlogn)
+ b)  Average case complexity=O(nlogn)
+ c)  Worst case complexity= O(n^2)
+
+Space complexity= O(nlogn)
+  
+
+Interpretation:Quick sort is fast sorting algorithm that works by spiltting a large array of data into smaller sub-array.this
+implies that each iteration works by splitting the input into two components,sorting them,and then recombining them. 
+
+Observation:
+The code got executed in less than 1 second but if we increase size of array then the execution time will increase.
+
+

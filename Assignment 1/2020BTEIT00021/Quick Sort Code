@@ -1,0 +1,101 @@
+//Adwait Vinod Samak
+//2020BTEIT00021
+//CA ASSIGNMENT 1
+
+#include <iostream>
+using namespace std;
+void swap(int *x, int *y)
+{
+	int temp;
+	temp = *x;
+	*x = *y;
+	*y = temp;
+}
+int Partition(int arr[], int low, int high)
+{
+	int i, j;
+	int v = arr[low];
+	i = low;
+	j = high;
+	do
+	{
+		do
+		{
+			i++;
+		} while (arr[i] <= v);
+		do
+		{
+			j--;
+		} while (arr[j] > v);
+		if (i < j)
+		{
+			swap(&arr[i], &arr[j]);
+		}
+	} while (i < j);
+	swap(&arr[low], &arr[j]);
+	return j;
+}
+void Quick(int arr[], int low, int high)
+{
+	int j;
+	if (low < high)
+	{
+		j = Partition(arr, low, high);
+		Quick(arr, low, j);
+		Quick(arr, j + 1, high);
+	}
+}
+int main()
+{
+	int n, i;
+
+	cout << "Enter the number of elements in array" << endl;
+	cin >> n;
+	int arr[n];
+	for (i = 0; i < n; i++)
+	{
+		arr[i] = n - i;
+	}
+
+	Quick(arr, 0, n);
+	cout << "Sorted Array: \n";
+	for (i = 0; i < n; i++)
+	{
+		cout << arr[i] << " "
+			 << "\n";
+	}
+}
+
+
+
+           Algorithm:
+  Partition:
+Step 1: Start
+Step 2: From the array, select the leftmost index value as pivot element(v).
+Step 3: Select the first element next to pivot element as i pointer's starting location. 
+        j pointer's starting location is the last element of the array.
+Step 4: Compare i with pivot element. If a[i]<v, then move then pointer to the RHS by 1. If a[i]>v, then Stop the pointer at that location.
+Step 5: Compare j with pivot element. If a[j]>v, then move the j pointer to the LHS by 1. If a[j]<v, then stop the pointer at that element location.
+Step 6: If (i<j) (i.e. if both pointers have not crossed each other), then swap the values at a[i] and a[j]. Continue steps 4 and 5.
+Step 7: If (i>j) (i.e. if both pointers have crossed each other), then swap a[j] with the pivot element. Return a[j].
+Step 8: End
+
+
+   Quick Sort:
+   Steps:
+    1. Start.
+    2. In function Quick Sort we take integer variable they are j, low, high and an array arr[].
+    3. Here j is used for storing data , low = starting element  and high = last element.
+    4. Now we need to check the condition to know wheatear low<high or not.
+    5. If (low < high){ }
+    6. If this condition is correct the further procedure is carried out.
+    7. Now we store the value of Partition function in “j”.
+    8. j =  Partition(arr, low, high).
+    9. As Quick Sort is recursive function so we pass value of j, low, high in Quick sort function to call itself.
+    10. Quicksort(arr, low, j).
+    11. Quicksort(arr, j+1, high).
+    12. This function  used because Partition function divide array in two parts so sort the both side array, we use this function.
+    13. Quicksort(arr,low, j) function is use to sort left side array.
+    14. Quicksort(arr, j+1, high) function is used to sort right side array.
+    15. End.
+                
