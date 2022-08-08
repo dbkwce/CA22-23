@@ -1,0 +1,25 @@
+Name: Suyog Prashant Patil
+PRN: 2020BTEIT00043
+Subject: Computer Algorithm
+Assignment No. 2
+
+
+Image Compression Using Vector Quantization 
+
+Original Image => 
+catt.png :
+	Dimensions: 128x128 px
+        Size: 23.3 kB
+
+Compressed Image =>
+compressed_cat.png :
+	Size: 18.7 
+	
+Huffman Encoding:
+	The time complexity of huffman encoding algorithm = O(nlogn) 
+	=> n is the number of different nodes present inside the Huffman tree
+
+
+ 
+
+
