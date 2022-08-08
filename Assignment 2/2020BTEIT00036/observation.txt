@@ -1,0 +1,9 @@
+Vector Quantization is a technique which is used to compress data (images) . 
+
+It works by dividing large set of points into smaller sections . 
+
+The general TC of huffman encoding algorithm is O(nlogn) , where n is the number of different nodes present inside the Huffman tree
+
+Before compression : 22kb
+
+After compression : 5kb
