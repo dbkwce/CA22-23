@@ -1,0 +1,5 @@
+The worst case occurs when the partition process always picks the greatest or smallest item as a temp and the complexity of Worst Case: O(N^2).
+
+The best-case occurs when a partition process always picks the middle element as a temp. And the complexity of Best Case: O(N).
+
+The average case means when there is neither a balanced tree nor the Worst Case. The complexity of the Average Case: (N log N).

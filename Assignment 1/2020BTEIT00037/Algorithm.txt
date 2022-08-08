@@ -1,0 +1,88 @@
+Algorithm:
+
+ 1.Select first value in datalist as a pivot.
+ 2.First value of a datalist will be "low" and last value will be "high".
+ 3.Set starting pointer at first element(low) and end pointer at last element(high). 
+ 4.If first value in the datalist is less than the pivot value increment start pointer.Continue the process until value at the start pointer becomes greater than or equal to the pivot value.
+ 5.If last value in the datalist is greater than the pivot value decrement end pointer.Continue the process until value at the end pointer becomes less than or equal to the pivot value.
+ 6.If start pointer is less than or equal to the end pointer,swap the values at their respective location.
+ 7.Swap the values of end pointer and pivot.
+ 8.Continue above all steps until both start and end pointers meets. 
+ 9.Once they meet,stop the program.
+Code:
+
+//Author:Abhishek Kabade
+//PRN:2020BTEIT00037
+
+#include <stdio.h>
+void quicksort(int[],int,int);
+void print(int arr[], int n);
+
+int main()
+{
+    int n;
+    printf("Enter no of array elements:");
+    scanf("%d",&n);
+    int i,j,datalist[n];
+
+
+    for(i=0;i<n;++i)
+    {
+        datalist[i]=n-i;
+    }
+
+    quicksort(datalist,0,n-1);
+    printf("\nDatalist after quick sort:");
+
+    print(datalist, n);
+
+}
+
+// Funtion for printing sorted list
+void print(int arr[], int n){
+    for(int i=0;i<n;i++){
+        printf("%d ", arr[i]);
+    }
+}
+
+// Funtion for swapping values
+void swap1(int *n1, int *n2){
+    int temp = *n1;
+    *n1 = *n2;
+    *n2 = temp;
+}
+
+// Funtion for implementing Quick Sort
+void quicksort(int datalist[],int low,int high)
+{
+    int pivot,i,j,temp;
+
+    if(low<high)
+    {
+        pivot=low;
+        i=low;
+        j=high;
+
+        while(i<j)
+        {
+            while((datalist[i]<=datalist[pivot])&&i<=high)
+            {
+                i++;
+            }
+            while((datalist[j]>datalist[pivot])&&j>=low)
+            {
+                j--;
+            }
+            if(i<j)
+            {
+                swap1(&datalist[i],&datalist[j]);
+            }
+        }
+
+        swap1(&datalist[j],&datalist[pivot]);
+
+	// Recursive quicksort function
+        quicksort(datalist,low,j-1);
+        quicksort(datalist,j+1,high);
+    }
+}

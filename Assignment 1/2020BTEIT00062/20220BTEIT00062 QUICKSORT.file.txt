@@ -1,0 +1,117 @@
+Name: Kshitish Gopal Savkar
+PRN NO: 2020BTEIT00062
+
+Quick Sort Algorithm
+
+
+  Basic algorithmic steps of quick sort.
+
+    Step1: Take n as a input which is size of array.
+    Step2: Randomely generate an array of specified size n.
+    Step3: Keep two variables startIndex and endIndex initializing with 0 and n - 1 repectively.
+    Step4: Call the quickSort function with the parameters array, startIndex and endIndex.
+    
+    	(In the quickSort function perform the following steps.)
+    	
+    Step5: If start>=end then return from the function.
+    Step6: Make call for partition function with argument array, startIndex and endIndex. 
+    Step7: Create a variable p storing the return value of partition funtion.
+    Step8: Make recursive call for quickSort with startIndex as original one and endIndex as p-1.
+    Step9: Make recursive call for quickSort with startIndex as p + 1 and endIndex as original one.
+    
+    	(Below are the steps for partition logic which is called by quickSort function.)
+    	
+    step10: Make one variable pivot storing arr[start].
+    step11: Make one variable named count initializing with 0.
+    Step12: Traverse the loop counting number of elements less than the pivot and store in variable count.
+    Step13: Make a variable pivotIndex storing current index of pivot i.e. pivotIndex = start + count.
+    Step14: Swap the element arr[pivotIndex] and arr[start].
+    Step15: Keep two variable i and j initializing with start and end.
+    Step16: Traverse the while loop till i < pivotIndex && j > pivotIndex.
+    Step17: Traverse the nested while loop for increment i till the elements are less than the pivot.
+    Step18: Traverse the another while loop for decrementing j till the elements are greater than the pivot.
+    Step19: If i < pivotIndex && j > pivotIndex then swap the arr[i] and arr[j].
+    Step20: Now return the pivotIndex to the quickSort function.
+    
+    
+    
+Code for quick sort algorithm.
+
+
+#include <iostream>
+using namespace std;
+void swap(int *arr,int x,int y){
+    //Swaps two function
+    int temp = arr[x];
+    arr[x] = arr[y];
+    arr[y] = temp;
+}
+int partition(int arr[], int start, int end)
+{
+    int pivot = arr[start];
+
+    int cnt = 0;
+    //counting the number of elements those are less than our pivot.
+    for (int i = start + 1; i <= end; i++)
+    {
+        if (arr[i] <= pivot)
+        {
+            cnt++;
+        }
+    }
+    //placing the element at its correct position.
+    int pivotIndex = start + cnt;
+    swap(arr,pivotIndex,start);
+    int i = start, j = end;
+    //placing all the element smaller than pivot on left and the elements greater than the pivot on the right side of the pivot
+    while (i < pivotIndex && j > pivotIndex)
+    {
+        while (arr[i] <= pivot)
+        {
+            i++;
+        }
+        while (arr[j] > pivot)
+        {
+            j--;
+        }
+        if (i < pivotIndex && j > pivotIndex)
+        {
+            swap(arr,i++,j--);
+        }
+    }
+    //returning the current index of pivot element.
+    return pivotIndex;
+}
+
+void quickSort(int arr[], int start, int end)
+{
+
+    if (start >= end)
+        return;
+    //finding the pivots right position.
+    int p = partition(arr, start, end);
+    //call for left part.
+    quickSort(arr, start, p - 1);
+    //call for right part.
+    quickSort(arr, p + 1, end);
+}
+
+int main()
+{
+
+    int n;
+    cin >> n;
+    int arr[n];
+    for (int i = 0; i < n; i++)
+    {
+        arr[i] = n - i;
+    }
+    quickSort(arr, 0, n - 1);
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
