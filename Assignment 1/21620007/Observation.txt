@@ -1,0 +1,51 @@
+PRN : 21620007
+
+Observation : 
+
+for n = 10 :
+           
+       Function_name    No_of_calls
+  	swap()	    	     13
+        partition()	     7
+        printArray()	     2	   
+  	quickSort() 	     1
+  	
+for n = 100:
+           
+       Function_name    No_of_calls
+  	swap()	    	    377
+        partition()	     67
+        printArray()	     2	   
+  	quickSort() 	     1  
+
+for n = 1000:
+           
+       Function_name    No_of_calls
+  	swap()	    	    5884
+        partition()	     674
+        printArray()	     2	   
+  	quickSort() 	     1
+
+for n = 10000:
+           
+       Function_name    No_of_calls
+  	swap()	    	    104252
+        partition()	     6775
+        printArray()	     2	   
+  	quickSort() 	     1  	
+
+from above observation we can conclude that if no of elements/data increases then no of calls are increasing. 
+Swap function  is called more times than any other functions.
+  	 
+  	 
+Time and Space Complexity:
+
+for n inputs : 
+I)Best Case Complexity O(n*logn) - 
+	In Quicksort, the best-case occurs when the pivot element is the middle element or near to the middle element. 
+	
+II)Average Case Complexity O(n*logn) -
+	 It occurs when the array elements are in jumbled order that is not properly ascending and not properly descending. 
+
+III)Worst Case Complexity O(n2) - 
+	In quick sort, worst case occurs when the pivot element is either greatest or smallest element. 

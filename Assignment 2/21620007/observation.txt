@@ -1,0 +1,6 @@
+Observation:
+1)Before compression of image size was 9kb 
+2)After compression of image size was 1kb
+Vector Quantization:
+A vector quantizer is composed of two operations.  The first is the encoder, and the second is the decoder.  
+The encoder takes an input vector and outputs the index of the codeword that offers the lowest distortion.  
