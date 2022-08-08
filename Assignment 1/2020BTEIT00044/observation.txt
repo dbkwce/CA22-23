@@ -1,0 +1,14 @@
+Name: Aditi Sudhir Ghate
+PRN: 2020BTEIT00044
+
+Assignment 1
+Computer Algorithms
+
+Obeservation:
+1. No, we can't decide the sequence of execution of functions.
+2. Time complexity:
+   Best Case	O(n*logn)
+   Average Case	O(n*logn)
+   Worst Case	O(n2)
+   
+   Space complexity: O(n*logn)

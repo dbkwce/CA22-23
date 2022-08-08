@@ -1,0 +1,22 @@
+Algorithm for Quick Sort :
+
+Quick Sort algorithm:
+step 1: check condition and if end > start move on
+step 2: make a int temp and pass array, int start, and int end, and pass as a function QUICKSORT
+step 3: pass array, start value and req - 1 index as fuction QUICKSORT
+step 4: pass array, req + 1 value and end value index as fuction QUICKSORT
+step 5: exit
+
+
+Partition Algorithm:
+step 1: set temp as end value of array4e4
+step 2: set req as start value of array
+step 3: repeat steps 4 to 7 for j = start to end - 1
+step 4: move on if j'th vale of array is equal or less than temp
+step 5: exchange req element of array with j'th element
+step 6: set req as req+1
+step 7: exchange req element of array with end element
+step 8: return req
+
+
+
