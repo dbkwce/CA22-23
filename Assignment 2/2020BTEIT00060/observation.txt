@@ -1,0 +1,25 @@
+Name: Sarthak Deshmukh
+PRN: 2020BTEIT00060
+Computer Algorithm
+Assignment 2
+
+Images :
+      i)  "input.jpg" (original and uncompressed) and "output.jpg' (original and compressed).
+      ii) Properties of "input.jpg" : 
+                        Dimensions: 128x128 px
+                        Size: 6.56 kB
+
+      iii) Properties of "output.jpg" :
+                        Dimensions: 90x88 px 
+                        Size: 3.61 kB
+                    
+Performance: 
+
+      Vector Quantization Algorithm: 
+
+                              compression ratio = (uncompressed image size / compressed image size)
+                                                = (6.56/ 3.61)
+                                                =  1.81717451
+ 
+ Huffman Coding Algorithm : 
+                 Time Complexity of the algorithm is O(nlogn), where n is number of different nodes present inside the Huffman tree.
