@@ -1,0 +1,24 @@
+Name: Shikha S. Choudhari
+Prn. 21620010
+
+
+1)  Original.jpg : 
+                        Dimensions: 128x128 px
+                        Size: 18.7 kB
+2) Compressed.png :
+                        Dimensions: 80x76 px 
+                        Size: 4.28 kB
+
+Performance: 
+   Vector Quantization Algorithm: 
+By calculating the Compression Ratio of the image: 
+
+ compression ratio = (uncompressed image size / compressed image size)
+ Compression Ratio = 18.7/4.28
+			 = 4.36
+
+
+Huffman Encoding Time Complexity:   
+
+          The time complexity for encoding each unique character based on its frequency is O(nlog n).
+Extracting minimum frequency from the priority queue takes place 2*(n-1) times and its complexity is O(log n). Thus the overall complexity is O(nlog n).
