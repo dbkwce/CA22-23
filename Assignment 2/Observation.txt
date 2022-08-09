@@ -1,0 +1,33 @@
+Name    :   Supriya Manikrao Pawar
+PRN     :   2020BTEIT00052
+Batch   :   T5
+Course  :   Computer Algorithm
+
+Assignment No:2
+Vector Quantization and Huffman Encoding
+
+Problem Statement: To use the Vector Quantization Algorithm to compressed an image.
+                   Get the Huffman code of the input image using Huffman Encoding Algorithm.
+
+Quantization means approximation.
+Here for this I have chosen 240*240 pixels PNG image which of 2 kb originally.
+I have compressed this image using vector quantization and the reconstructed size is 1 kb.
+
+Files:
+    Images:
+    1.OriginalGreyImage.png is the image before compressing
+    2.ReconstructedImg.png is the image after compressing
+
+    Coding:
+    1.VectorQuatization is the file written in Python which contains the code for compressing image.
+    2.HuffmanEncoding is the file in Python.
+        I have created these files by referring on the google and youTube.
+
+    Observations:
+        File is reduced from 2 kb to 1 kb after compression.
+        Compression rate: Original image/Compressed image
+                        = 2kb /1 kb
+                        = 2
+
+        The time complexity for Huffman algorithm is O(nlogn).
+        n is the number of nodes of tree.
