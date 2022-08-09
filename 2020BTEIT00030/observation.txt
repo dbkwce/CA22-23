@@ -1,0 +1,32 @@
+Name: Harshali Parihar.
+PRN: 2020BTEIT00030
+CA assignment no.1
+
+
+Observation for:
+
+1) If we can decide the sequence of functions executed from 'gprof' ?
+
+   Yes, we can decide the sequence of functions in the quicksort from gprof.
+   Given below is the sequence of functions from gprof output:
+   
+   i]partition(int*, int, int)
+  ii]swap(int*, int*)
+ iii]printArray(int*, int)
+  iv]quickSort(int*, int, int)
+
+First of all give the required commands and get the profile output for different values of 'n'.
+At first take the value of 'n' as 10 and then we can observe that time complexity is very less such as 0.000012 sec.
+Time complexity For the values of 'n' such as 100, 1000 is approximately 0.
+When we take value of 'n' like 10000, 100000 then the time complexity will increase.
+So by observing the time complexities for different values of 'n', we can conclude that if we increase the value of 'n' then time complexity will be Increase.
+
+
+2) Complexity of the algorithm:
+
+The time complexity for Quick sort program is O(n*log n). 
+Space Complexity of the Quick sort program is O(log n).
+
+ 
+
+      

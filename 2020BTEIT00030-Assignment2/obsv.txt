@@ -1,0 +1,39 @@
+Name: Harshali Laxmikant Parihar.
+PRN: 2020BTEIT00030
+Batch: T3
+
+Problem statement:
+ Image Compression Using Vector Quantization and Encoding using Huffman Encoding
+ To use the Vector Quantization Algorithm to compressed an image. Get the Huffman code of the input image using Huffman Encoding Algorithm.
+
+
+Performance: 
+1] Image.png : Dimensions: 128x128 px
+               Size: 48 kB
+
+2] compressimg.png : Dimensions: 80x78 px 
+                     Size: 35 kB
+
+3] Vector Quantization Algorithm: By calculating the Compression Ratio of the image: 
+                                  Compression ratio = (uncompressed image size / compressed image size)
+                                                    = ( 48 / 35 )
+                                                    = 1.3714
+
+Huffman Encoding Time Complexity:   
+
+1] Time complexity: O(nlogn) where n is the number of unique characters.
+
+2] If there are n nodes, extractMin() is called 2*(n – 1) times. ExtractMin() takes O(logn) time as it calles minHeapify(). So, overall complexity is O(nlogn).
+      
+
+
+
+
+
+
+
+
+
+
+
+
