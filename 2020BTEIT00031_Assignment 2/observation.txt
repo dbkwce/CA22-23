@@ -1,0 +1,16 @@
+Name:Vaishnavi Vivekanand Kulkarni
+PRN:2020BTEIT00031
+
+
+Original image size:19kb
+compressed image size:11kb
+
+Observation:By using Vector quantization algorithm:
+Output image is 40% smaller than input image
+So, compressed ratio is:0.4
+
+
+Huffman Encoding Time Complexity:   
+
+Time complexity: O(nlogn) 
+ 
