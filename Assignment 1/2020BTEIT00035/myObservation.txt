@@ -1,0 +1,14 @@
+ Q.1st 
+--> we can not decide the sequence of functions executed from 'gprof' but we can have a count of number of function calls made by each of the functions.
+
+Q.2nd
+-->
+Best case complexity : O(n*log(n)).
+Worst case complexity : O(n^2).
+Average case complexity : O(n*log(n)).
+
+For some of the inputs  'n' observations are
+for n=10, number of func. calls are 30 to 40.
+for n=100, number of func. calls are 500 to 700.
+for n=1000, number of func. calls are 6000 to 8000.
+for n=10000, number of func. calls are 85000 to 125000.

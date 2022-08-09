@@ -1,0 +1,64 @@
+Name: Sarthak R Deshmukh
+PRN:- 2020BTEIT00060
+Assignment 1 
+Algorithm and Code (in c++) for Quicksort.
+
+Algorithm:-
+
+Step 1- First input the value of n 
+Step 2- According to the n value, assign values to all the array elements.
+Step 3- Call the function quicksort by passing array and 2 indexes 0 & n-1 as parameter.
+Step 4- In quicksort function according to the passe two index values l & r if l<r then         perform the following steps.
+Step 5- Call partition function and pass l and r as parameter.
+Step 6- In partition function, first set the pivot element as the last element of array.
+        & take a variable i=l-1;
+Step 7- Then by running the for loop, position the pivot element such that elements left to        the pivot are smaller than pivot and elements right to the pivot are greater than            the pivot by swapping (calling swap function) the element at jth index with ith index        element if jth index element is less than pivot.
+Step 8- After completing the for loop swap the (i+1)th index element with index at rth               element & return i+1.
+Step 9- After returning the partition function value two quicksort functions will be called.         In first function we will sort the subarray present before pivot element and in         second we will sort the subarray present after pivot element.
+Step 10- After performing all the above steps sorted array will be returned to the uicksort          function and lastly we have to print the array which is sorted now.
+
+
+Code:- 
+
+#include<iostream>
+using namespace std;
+
+void swap(int arr[],int i,int j){//function to swap 2 elements 
+ int temp = arr[i];
+ arr[i]=arr[j];
+ arr[j]= temp;
+}
+// Partition function assigns last element value to pivot & places all smaller element than pivot to left of pivot and all larger element to right of pivot 
+int partition(int arr[],int l,int r){ 
+  int pivot = arr[r];
+  int i= l-1;  // assigning i value as -1
+ 
+  for(int j=l;j<r;j++){
+     if(arr[j]<pivot){
+      i++;
+      swap(arr,i,j); 
+    }
+  }
+  swap(arr,i+1,r);
+  return i+1;
+}
+void quickSort(int arr[],int l, int r){
+    if(l<r){
+    int pi = partition(arr,l,r); // pivot element 
+    quickSort(arr,l,pi-1);
+    quickSort(arr,pi+1,r); 
+    }
+}
+int main(){
+  int n;
+  cin>>n; // Input number of Elements
+  int arr[n];
+  for(int i=0;i<n;i++){
+   arr[i]= n-i;  // Assigning all array elements a value depending on n
+  }
+  quickSort(arr,0,n-1);// quicksort function call
+  for(int i=0;i<n;i++){
+    cout<<arr[i]<<" ";
+  }
+  cout<<endl;
+}

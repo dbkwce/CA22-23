@@ -1,0 +1,102 @@
+Algorithm : 
+
+1. Take array size as input .
+2. Call for quick sort function
+3. Make first element as the pivot, and then taking the pivot to its correct position by counting smaller elements than it in array.
+4. Arrange the element such that elements on left of pivot are smaller than pivot element
+5. Also arrange the remaining element which are greater than pivot on the right side of pivot element.
+6. For arranging elements ,start with two flags - one on start and another on end of the array.
+7. If start element is less than pivot element then move forward with start and vice versa with end ,i.e move the end backwards.
+8. If start is greater than pivot OR end element is smaller than pivot , then swap start and end elements. 
+9. Call quicksort recurively for left part of array from pivot starting from index 0 to pivot -1
+10. Call quicksort recurively for left part of array from pivot starting from index pivot+1 to n-1; 
+11. Call the print function to print the array.
+
+
+Code:
+//2020BTEIT00061
+//ABHISHEK DEOKAR - QUICKSORT
+
+#include <bits/stdc++.h>
+using namespace std;
+
+
+void swap(int &a, int &b)
+{
+	int temp = a;
+	a = b;
+	b = temp;
+}
+
+
+int partition (int arr[], int s, int e)
+{
+    
+	int pivot = arr[s];
+
+    int cnt = 0;
+    for(int i = s+1; i<=e; i++) {
+        if(arr[i] <=pivot) {
+            cnt++;
+        }
+    }
+    int pivotIndex = s + cnt;
+    swap(arr[pivotIndex], arr[s]);
+    int i = s, j = e;
+
+    while(i < pivotIndex && j > pivotIndex) {
+        while(arr[i] <= pivot) 
+        {
+            i++;
+        }
+        while(arr[j] > pivot) {
+            j--;
+        }
+        if(i < pivotIndex && j > pivotIndex) {
+            swap(arr[i++], arr[j--]);
+        }
+    }
+    return pivotIndex;
+
+}
+
+
+void quickSort(int arr[], int low, int high)
+{
+	if (low < high)
+	{
+		
+		int pi = partition(arr, low, high);
+
+		
+		quickSort(arr, low, pi - 1);
+		quickSort(arr, pi + 1, high);
+	}
+}
+
+
+void print(int arr[], int size)
+{
+	int i;
+	for (i = 0; i < size; i++)
+		cout << arr[i] << " ";
+	cout << endl;
+}
+
+
+int main()
+{
+    int n;
+    cout<<"Enter the size of array :"<<endl;
+    cin>>n;
+    int arr[n];
+	for(int i=0;i<n;i++)
+    {
+        arr[i] = n-i;
+    }
+	quickSort(arr, 0, n - 1);
+	cout << "Sorted array: "<<endl;
+	print(arr, n);
+	return 0;
+}
+

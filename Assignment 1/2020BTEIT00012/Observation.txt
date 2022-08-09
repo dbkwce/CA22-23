@@ -1,0 +1,30 @@
+Name: Ankita Avinash Zade
+PRN: 2020BTEIT00012
+
+No, we can't decide the sequence of functions executed from gprof since gprof profiling only tells a function's execution time and no. of times function calls. 
+
+Time Complexity:
+Let T(n) be the time complexity for quick sort, where n is the size of the array. Quick sort contains two parts divide and conquer.
+The time complexity of the divide part i.e. partitioning of the array is T(n).
+The time complexity of the conquer part = Time complexity of sorting the left subarray + Time complexity of sorting the right subarray = T(i) + T(n - i - 1), where i is the index of the pivot.
+
+Worst-case: O(n^2)
+In the worst case, the array is sorted in ascending or descending order and the pivot element selected is the largest or smallest then the pivot index will be at the end of the so array will be divided array into two subarrays with (n-1) elements and 0 elements and sorting of this takes time T(n-1) + T(0), which is equal to T(n-1)
+so, the total complexity of partitioning and sorting will be T(n^2)
+
+Best-case: O(nlogn)
+In the best case, the pivot index will be middle so arrays are divided into two sub-arrays with a size half of the size of the array, and sorting of this takes time T(n/2) + T(n/2), which is equal to 2T(n/2)
+so, the total complexity of partitioning and sorting recurrence will be T(nlogn)
+
+
+Observation of result:
+No.of calls of a function for input value n = 1000
+
+Function:   No. of calls
+swap()	     9999
+partition()     25004999
+Quick_sort()    1
+printArray()    1
+
+From the output, it is seen that swap() called maximum times i.e 25004999 which has the complexity of O(1), and then partition() called 9999 times which has the complexity of 0(n), while printarray() and Quick_sort called once.
+

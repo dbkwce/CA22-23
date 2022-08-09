@@ -1,0 +1,27 @@
+1. No we can't decide the sequence of function execution.
+   Because in call graph, the functions are sorted according to the time spent while execution. So, we can't decide their order of execution.
+   
+
+2. Time complexity of quicksort :- Best case :- O(nlogn)
+                                   Average case :- O(nlogn)
+                                   Worst case :- O(n^2)
+                                   
+    Here, time complexity depends on the pivot element. 
+a) In best case, the pivot would be median element.
+b) In worst case, the pivot could be end element.
+
+Time complexity :- 
+  T(n) = 2T(n/2) + n
+  T(n) = 2T(n/2) + n
+  T(n/2) = 2T(n/4) + n/2
+  T(n/4) = 2T(n/8) + n/4
+  .          .        .
+  .          .        .
+  .          .        .
+   T(1) = 1
+So, levels will be n/(2^k) = 1
+                   n= 2^k
+                   k = logn
+
+T(n) = n+ n+n+....log n terms 
+So, O(nlogn) will be the best case time complexity

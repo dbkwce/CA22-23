@@ -1,0 +1,10 @@
+﻿Algorithm for Quicksort   2020BTEIT00077
+
+
+* Step 1 - Consider the first element of the list as pivot .
+* Step 2 - Define two variables low and high. Set low and high as first and last elements of the list respectively.
+* Step 3 - Increment low until list[low]> pivot then stop.
+* Step 4 - Decrement j until list[high] < pivot then stop.
+* Step 5 - If low < high then exchange list[high] and list[low].
+* Step 6 - Repeat steps 3,4 & 5 until low>high.
+* Step 7 - Exchange the pivot element with list [high] element.
