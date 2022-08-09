@@ -1,0 +1,27 @@
+Q3. -->  if we can decide the sequence of functions executed from 'gprof' ?
+          No, gprof profilling can't decide the sequence of execution of function. It only tells execution time of the a particualr function and number of times it has been called.
+
+
+
+Q3. -->  Comment on the complexity of the algorithm 
+
+1 : Choose the highest index value has pivot
+2 : Take two variables to point left and right of the list excluding pivot
+3 : left points to the low index
+4 : right points to the high
+5 : while value at left is less than pivot move right
+6 : while value at right is greater than pivot move left
+7 : if both step 5 and step 6 does not match swap left and right
+8 : if left ≥ right, the point where they met is new pivot   
+
+
+Best Case:
+The best case occurs when the partition process always picks the middle element as the pivot. The following is recurrence for the best case. So the best Time Complexity of the Program is O(n*log(n)).
+
+Worst Case: 
+The worst case occurs when the partition process always picks the greatest or smallest element as the pivot. So the best Time Complexity of the Program is O(n^2).
+
+The space complexity of program is O(n*log(n)).
+
+
+

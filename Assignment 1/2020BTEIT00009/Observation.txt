@@ -1,0 +1,42 @@
+Name: Nikita N Deshpande
+
+
+PRN No: 2020BTEIT00009
+
+
+Sub: Computer Algorithm
+
+
+Date: 25-07-2022
+
+
+
+Observation for quick sort:
+From gprof, the following functions are executed:
+
+
+The first thing we can observe is that we will get different profiles for different n values if we enter different commands. This will provide us with the following information:
+
+
+1)Here by putting different values of n we can see different time complexities.
+2)We can see that the time complexity of the model is approximately 0 when n=10. The same applies to n=100 and n=1000.
+  
+
+However, when we increase the value of n, there is an increase in time complexity. This means that we get time complexity for different functions at bigger values of n, such as n=10000 and n=100000. This can be seen in the output file.
+4) We can observe that as n values increase, the complexity of time increases as well.
+
+
+5)Time and space complexity:
+Here the time complexity of program 
+Best Case Complexity: The best-case time complexity of quicksort is O(n*logn).
+
+
+Average Case Complexity -The average case time complexity of quicksort is O(n*logn).
+
+
+Worst Case Complexity - The worst-case time complexity of quicksort is O(n2).
+
+
+
+
+The space complexity of program is O(n*log(n)) and it is not stable.

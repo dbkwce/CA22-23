@@ -1,0 +1,55 @@
+Algorithm:
+ 1. partition the array using pivot value
+ 2. Quick_sort left partition recursively
+ 3. Quick_sort right partition recursively
+
+Partition Algorithm:
+ 1. Choose the  pivot
+ 2. Take variable i which will denote the correct position of the pivot
+ 3. Traverse the array and check whether the current element is less than the pivot. If it is; increment I and swap the element with the element at index i, in order to make left side elements of pivot index less than the pivot and right side greater so that array is divided into two subarray, first smaller than and second greater than pivot
+ 4. At the end, the value of i is the correct index of pivot such that all elements smaller than pivot will come to left and others greater than pivot to right
+/*low= starting index, high= ending index*/
+
+Quick_sort(arr[], low, high) {
+
+    if (low < high) {
+
+
+        pivot_index = partition(arr, low, high); //get the pivot index
+
+        Quick_sort(arr, low, pivot_index – 1);  // sort left subarrray before pivot
+
+        Quick_sort(arr, pivot_index + 1, high); // sort left subarrray after pivot
+
+    }
+
+}
+
+//This function returns the correct position of pivot
+
+partition (arr[], low, high)
+
+{
+
+pivot = arr[low];  
+
+ i = (low – 1)  // correct Index of pivot
+
+for (j = low; j <= high- 1; j++){
+
+ // If the current element is smaller than the pivot
+	if (arr[j] < pivot){
+		i++;    
+ 		swap (arr[i] , arr[j]);
+     }
+ }
+
+     i++;
+    swap (arr[i] , arr[high]);
+return i;
+}
+
+
+
+
+

@@ -1,0 +1,30 @@
+Name:Vaishnavi Vivekanand Kulkarni
+PRN:2020BTEIT00031
+Branch:Information Technology
+subject:Computer Algorithm
+
+Observation:
+
+Sequence of functions executed from gprof:
+Yes, we can decide sequence of functions executed from gprof.
+Following is sequence of functions from gprof:
+1)partition(int*, int, int)
+2)swap(int*, int*)
+3)printArray(int*, int)
+4)quickSort(int*, int, int)
+
+Firstly, by entering different commands we will get profile output for different n values and from that we can observe following things:
+
+1)Here by putting different values of n we can see different time complexities.
+2)By putting n=10, we can see time complexity is approximately 0. Likewise for n=100 and n=1000 also.
+3)But when we increase value of n we can see increase in time complexity. That is for bigger values like n=10000 and n=100000 we got time complexity for different functions.This we can see in output file.
+4)We can obeserve here as we increase n values time complexity increases. 
+
+5)Time and space complexity:
+Here the time complexity of program is O(n*log(n).
+The space complexity of program is O(n*log(n)).
+
+6)Conclusion:
+Complexity of Quicksort algorithm is O(n*log (n)).
+  
+

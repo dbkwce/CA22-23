@@ -1,0 +1,67 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 87.29      0.27     0.27  1224567     0.00     0.00  partition(int*, int, int, int&)
+  4.85      0.29     0.02 11733980     0.00     0.00  swap(int*, int*)
+  3.23      0.30     0.01        2     5.01     5.01  printArray(int*, int)
+  3.23      0.31     0.01        1    10.02   295.66  quickSort(int*, int, int, int&)
+  1.62      0.31     0.01  1234568     0.00     0.00  printRandoms(int, int, int)
+  0.00      0.31     0.00        1     0.00     0.00  _GLOBAL__sub_I__Z12printRandomsiii
+  0.00      0.31     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+
+
+
+
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 3.22% of 0.31 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]    100.0    0.00    0.31                 main [1]
+                0.01    0.29       1/1           quickSort(int*, int, int, int&) [2]
+                0.01    0.00       2/2           printArray(int*, int) [5]
+                0.01    0.00 1234568/1234568     printRandoms(int, int, int) [6]
+-----------------------------------------------
+                             2449134             quickSort(int*, int, int, int&) [2]
+                0.01    0.29       1/1           main [1]
+[2]     95.2    0.01    0.29       1+2449134 quickSort(int*, int, int, int&) [2]
+                0.27    0.02 1224567/1224567     partition(int*, int, int, int&) [3]
+                             2449134             quickSort(int*, int, int, int&) [2]
+-----------------------------------------------
+                0.27    0.02 1224567/1224567     quickSort(int*, int, int, int&) [2]
+[3]     91.9    0.27    0.02 1224567         partition(int*, int, int, int&) [3]
+                0.02    0.00 11733980/11733980     swap(int*, int*) [4]
+-----------------------------------------------
+                0.02    0.00 11733980/11733980     partition(int*, int, int, int&) [3]
+[4]      4.8    0.02    0.00 11733980         swap(int*, int*) [4]
+-----------------------------------------------
+                0.01    0.00       2/2           main [1]
+[5]      3.2    0.01    0.00       2         printArray(int*, int) [5]
+-----------------------------------------------
+                0.01    0.00 1234568/1234568     main [1]
+[6]      1.6    0.01    0.00 1234568         printRandoms(int, int, int) [6]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [20]
+[13]     0.0    0.00    0.00       1         _GLOBAL__sub_I__Z12printRandomsiii [13]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [14]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__Z12printRandomsiii [13]
+[14]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [14]
+-----------------------------------------------
+
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+
+
+Index by function name
+
+  [13] _GLOBAL__sub_I__Z12printRandomsiii [14] __static_initialization_and_destruction_0(int, int) [2] quickSort(int*, int, int, int&)
+   [5] printArray(int*, int)   [4] swap(int*, int*)
+   [6] printRandoms(int, int, int) [3] partition(int*, int, int, int&)

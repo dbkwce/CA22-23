@@ -1,0 +1,19 @@
+Name:Abhishek Kabade
+PRN:2020BTEIT00037
+
+Observation:
+
+    1.Can we decide the sequence of functions executed from 'gprof'
+Ans- No, we can't be able to decide sequence of functions from gprof.
+     We could able to know how much time it does take to execute all functions and their children functions.
+     It also tells us about how many times each function is called or executed.
+
+
+    2.Complexity of Quick Sort algorithm
+Ans- Best case: O(N log(N))
+	When element present in middle position of datalist is marked as a pivot value.
+        In this case,datalist is get divided in 2 halves in each operation leading to log(n) for n input and for n times.
+     
+     Worst case: O(N^2)
+	When smallest or largest element in datalist is get selected as a pivot,this senario occcurs.
+        In this case,datalist will never get partitioned hence we have to do n steps n number of times.

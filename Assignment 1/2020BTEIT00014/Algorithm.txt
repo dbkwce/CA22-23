@@ -1,0 +1,81 @@
+//Profiling of Quicksort
+//PRN 2020BTEIT00014
+//Rahul Kumar Gop
+
+/*
+	1 Select First element of the Array as Pivot for Sorting
+	2 Start comparing elements to Pivot from both End
+	3 Until find an element bigger than pivot on left side and smaller than pivot on right side, then swaqp it 
+	4 Repeat 3rd step, till all elements are compared
+	5 Current position of the Pointer coming from the End is the Pivot's Sorted position, swap with it.
+	6 It makes 2 array, left array is Smaller than Pivot and Right array is Bigger.
+	7 Now, Repeat all the steps for both array and keep calling Recursively.
+*/
+
+#include <iostream>
+
+using namespace std;
+
+void showArray(int Array[], int size){                     //Displays the Array
+	for (int i =0; i<size; i++)
+		cout<<Array[i]<<"	";
+	cout<< endl;
+}
+
+void swap (int *a, int *b){                                    //Swapping Function
+    int temp;
+    temp = *a;
+    *a= *b;
+    *b = temp;
+}
+
+int partition(int Array[], int low , int high){               //Selects a Pivot, Find and shifts to its Sorted Position, returns that position
+    int i =low, j = high , pivot = Array[low];
+
+    do{
+        do {i++;}
+            while(Array[i] <= pivot);
+        do {j--;}
+            while(Array[j] > pivot);
+
+        if (i<j)
+            swap(&Array[i], &Array[j]);
+    }while(i<j);
+
+    swap (&Array[low], &Array[j]);
+    return j;
+}
+
+void QuickSort(int Array[], int low , int high){            //Recursively call itself till the Array is sorted
+    int sortedPos;
+
+    if (low < high){
+        sortedPos = partition(Array, low, high);
+        QuickSort(Array, low, sortedPos);
+        QuickSort(Array, sortedPos+1, high);
+    }
+}
+
+int main(){
+    int size = 10;
+    //cout<<"Enter the size for the Array"<<endl;
+    //cin>>size;
+    //int *Array = new int(size);
+    int Array[size];
+    
+    cout<<"Enter the " << size<< " Elements"<< endl;
+    for (int i =0; i<size; i++)
+    	cin>>Array[i];
+    
+    cout<<"Before Sort: "<<endl;
+    showArray(Array, size);
+    
+    QuickSort(Array,0, size);
+    
+    cout<<"After Sort: "<<endl;
+    showArray(Array, size);
+    
+    //delete(Array);
+
+    return 0;
+}

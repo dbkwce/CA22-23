@@ -1,0 +1,16 @@
+1. After obsering the 'result.txt' file, I observed that we can not decide the sequence of functions executed from 'gprof'. Instead of this we can tell about the description of functions such as number of calls of that function in a code and the function on which it depends.
+
+2. Complexity of algorithm
+
+Time Complexity:
+	After giving various inputs to the code, I have calculated the total function calls.
+	
+	Input Size (n)	Number of function calls     Approx. value of n*log(n)
+								
+	10		30 to 40 		     10log(10) = 33	
+	100 		500 to 700		     100log(100) = 664
+	1000 		7000 to 9000		     1000log(1000) = 9966
+	10000 		85000 to 125000		     10000log(10000) = 132880
+	100000 	        1250000 to 1500000	     100000log(100000) = 1661000
+
+So, from above stats the time complexity according to various inputs is approximately n*log(n)

@@ -1,0 +1,100 @@
+Algorithm :-
+1.Partition
+    Steps:-
+1. Start.
+2. In Partition function we use integer variable pivot, array, l , h, I, j.
+3. We store the element at index l in pivot. 
+4. Pivot = A[l];
+5. Now we will assign the i=l and j=h;
+6. To sort the array, we use do while loop and this loop will continue only when i < j.
+7. In do while loop for further sorting we use do while loop.
+8. First loop in it will have condition of : do(i++)while(A[i]<=pivot) and second loop will have condition of : do(i--) while(A[j]>pivot).
+9. If(i<j)then we need to swap ( A[l], A[h]).
+10. The loop will continue till the i<j.
+11. After this er will swap(A[l] , A[j]).
+12. End.
+
+2.Quick Sort
+    Steps:-
+1. Start.
+2. In function Quick Sort we take integer variable they are j, l, h and an array A[].
+3. Here j is used for storing data , l = starting element  and h = end element.
+4. Now we need to check the condition to know wheatear l<h or not.
+5. If (l < h){ }
+6. If this condition is correct the further procedure is carried out.
+7. Now we store the value of Partition function in “j”.
+8. j =  Partition(A, l, h).
+9. As Quick Sort is recursive function so we pass value of j, l, h in Quick sort function to call itself.
+10. Quicksort(A, l, j).
+11. Quicksort(A, j+1, h).
+12. This function  used because Partition function divide array    in two parts so sort the both side array, we use this function.
+13. Quicksort(A, l,  j) function is use to sort left side array.
+14. Quicksort(A, j+1, h) function is used to sort right side array.
+15. End.
+
+          
+Code:-
+
+# include<iostream>
+using namespace std;
+void swap(int *x,int *y)
+{
+	int temp;
+	temp = *x;
+	*x = *y;
+	*y = temp;
+}
+int Partition(int A[],int l,int h)
+{
+	int i,j;
+	int pivot=A[l];
+	i=l;
+	j=h;
+	do
+	{
+		do
+		{
+			i++;
+		}while(A[i]<=pivot);
+		do{
+			j--;
+		}while(A[j]>pivot);
+		if(i<j)
+		{
+			swap(&A[i],&A[j]);
+		}
+	}while(i<j);
+	swap(&A[l],&A[j]);
+	return j;
+}
+void Quick(int A[],int l,int h)
+{
+	int j;
+	if(l<h)
+	{
+		j=Partition(A,l,h);
+		Quick(A,l,j);
+		Quick(A,j+1,h);
+	}
+}
+int main()
+{
+	int n,i;
+	
+	cout<<"Enter the number of element in array"<<endl;
+	cin>>n;
+	int A[n];
+	cout<<"The array is : ";
+	for(i=0;i<n;i++)
+	{
+	A[i]=n-i;	
+	}
+	
+	Quick(A,0,n);
+	cout<<endl<<"The sorted array is :";
+	for(i=0;i<n;i++)
+	{
+		cout<<A[i]<<" ";
+	}
+}  
+ 

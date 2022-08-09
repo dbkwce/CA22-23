@@ -1,0 +1,44 @@
+PRN NO = 21620003
+NAME=ANAND NANDKUMAR KADALE
+
+Q1.
+No, we can't decide the sequence of function execution. Because in call graph, the functions are sorted according to the time spent while execution. 
+
+Q2.
+
+On the complexity of time and space
+Here, the best programme time complexity is O(n*log(n)), and the worst programme time complexity is O(n2).
+Additionally, a program's average time complexity is O(n*log(n)).
+Program complexity in terms of space is O(n*log(n)).
+Here, the time needed to run the application grows as we raise the value of n.
+Thus, the time needed to run the programme is precisely proportional to n.
+The time needed to run the programme is shorter for lower values of n. (for example if value of n is 10 then the execution time is nearly 0).
+The time needed to run the programme increases for bigger values of n.
+
+Time complexity of quicksort :-
+ Best case :- O(nlogn)-- In best case the pivot would be median element.
+ Average case :- O(nlogn)--It is similar to the best case and the elements are unsorted.
+ Worst case :- O(n^2)--In the pivot could be end element.
+
+Time complexity :- 
+  T(n) = 2T(n/2) + n
+  T(n) = 2T(n/2) + n
+  T(n/2) = 2T(n/4) + n/2
+  T(n/4) = 2T(n/8) + n/4
+  .          .        .
+  .          .        .
+  .          .        .
+   T(1) = 1
+So, levels will be n/(2^k) = 1
+                   n= 2^k
+                   k = logn
+
+T(n) = n+ n+n+....log n terms 
+So, O(nlogn) will be the best case time complexity
+                                   
+                              
+* The Complexity of this Algorithm is O(n^2), Because in my code i have taken last element of array as Pivot element, by this the algorithm has
+to compare more time than regular.
+
+if we want to reduce the complexity of this algorithm, then we have to set the pivot element as middle element which lead to have less 
+comparisons as compared to pivot as last element

@@ -1,0 +1,13 @@
+                                   (Observation)
+ 
+ Time Complexity:= 
+   		   1]Average= O(N*logN);  When we divide array approximately into 2 equal halves, that is by taking pivot as the middle element.
+ 		   2]Worst case= O(N^2);  When we take pivot elemet as the end element in the array.
+ 		   
+Space Complexity = Worst case : O(n)  Best case : O(logn)
+ 		   
+ Total number of comparisons  = n
+ 
+ We cannot decide sequence of functions executed from gprof , the gprof file shows only any times the functions were called.
+  		   
+ 			  		
